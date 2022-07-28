@@ -1,0 +1,11 @@
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DoAn_QLTV.exe.config
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DoAn_QLTV.exe
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DoAn_QLTV.pdb
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.csproj.AssemblyReference.cache
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.csproj.SuggestedBindingRedirects.cache
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.Properties.Resources.resources
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.csproj.GenerateResource.cache
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.csproj.CoreCompileInputs.cache
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.exe
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.pdb
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.fDangNhap.resources
