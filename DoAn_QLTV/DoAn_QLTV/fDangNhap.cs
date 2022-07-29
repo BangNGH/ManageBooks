@@ -31,5 +31,21 @@ namespace DoAn_QLTV
         {
 
         }
+
+        private void btDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void fDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Xác nhận thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK )
+            e.Cancel = true;
+        }
     }
 }
