@@ -1,6 +1,6 @@
 ﻿namespace DoAn_QLTV
 {
-    partial class fDangNhap
+    partial class frmDangNhap
     {
         /// <summary>
         /// Required designer variable.

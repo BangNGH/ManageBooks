@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAn_QLTV
 {
-    public partial class fDangNhap : Form
+    public partial class frmDangNhap : Form
     {
-        public fDangNhap()
+        public frmDangNhap()
         {
             InitializeComponent();
         }
@@ -34,7 +34,10 @@ namespace DoAn_QLTV
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
-
+            frmTrangchu f = new frmTrangchu();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
         private void btThoat_Click(object sender, EventArgs e)
