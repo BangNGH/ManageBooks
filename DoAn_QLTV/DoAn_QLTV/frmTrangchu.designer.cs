@@ -49,7 +49,6 @@
             this.tìmKiếmNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmTácGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +61,7 @@
             // 
             // menuStrip2
             // 
+            this.menuStrip2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hệThốngToolStripMenuItem,
@@ -119,14 +119,15 @@
             // 
             this.tsCapnhatnhanvien.Margin = new System.Windows.Forms.Padding(3);
             this.tsCapnhatnhanvien.Name = "tsCapnhatnhanvien";
-            this.tsCapnhatnhanvien.Size = new System.Drawing.Size(180, 22);
+            this.tsCapnhatnhanvien.Size = new System.Drawing.Size(177, 22);
             this.tsCapnhatnhanvien.Text = "Cập nhật nhân viên";
+            this.tsCapnhatnhanvien.Click += new System.EventHandler(this.tsCapnhatnhanvien_Click);
             // 
             // tsCapnhatdocgia
             // 
             this.tsCapnhatdocgia.Margin = new System.Windows.Forms.Padding(3);
             this.tsCapnhatdocgia.Name = "tsCapnhatdocgia";
-            this.tsCapnhatdocgia.Size = new System.Drawing.Size(180, 22);
+            this.tsCapnhatdocgia.Size = new System.Drawing.Size(177, 22);
             this.tsCapnhatdocgia.Text = "Cập nhật độc giả";
             this.tsCapnhatdocgia.Click += new System.EventHandler(this.tsCapnhatdocgia_Click);
             // 
@@ -134,14 +135,14 @@
             // 
             this.tsCapnhatsach.Margin = new System.Windows.Forms.Padding(3);
             this.tsCapnhatsach.Name = "tsCapnhatsach";
-            this.tsCapnhatsach.Size = new System.Drawing.Size(180, 22);
+            this.tsCapnhatsach.Size = new System.Drawing.Size(177, 22);
             this.tsCapnhatsach.Text = "Cập nhật sách";
             // 
             // tsCapnhattheloai
             // 
             this.tsCapnhattheloai.Margin = new System.Windows.Forms.Padding(3);
             this.tsCapnhattheloai.Name = "tsCapnhattheloai";
-            this.tsCapnhattheloai.Size = new System.Drawing.Size(180, 22);
+            this.tsCapnhattheloai.Size = new System.Drawing.Size(177, 22);
             this.tsCapnhattheloai.Text = "Cập nhật thể loại";
             // 
             // mượntrảSáchToolStripMenuItem
@@ -209,7 +210,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(770, 73);
+            this.button2.Location = new System.Drawing.Point(770, 51);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 19);
@@ -218,23 +219,12 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(538, 49);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 18);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Tên đăng nhập:";
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(639, 49);
+            this.textBox2.Location = new System.Drawing.Point(770, 27);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 20);
+            this.textBox2.Size = new System.Drawing.Size(75, 20);
             this.textBox2.TabIndex = 9;
             // 
             // frmTrangchu
@@ -243,9 +233,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(856, 366);
+            this.ClientSize = new System.Drawing.Size(856, 431);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.menuStrip2);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -276,7 +265,6 @@
         private System.Windows.Forms.ToolStripMenuItem báoCáoThốngKêToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsLichsumuontra;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmSáchToolStripMenuItem;

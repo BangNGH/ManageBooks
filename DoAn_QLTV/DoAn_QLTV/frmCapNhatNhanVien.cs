@@ -144,5 +144,15 @@ namespace DoAn_QLTV
         {
 
         }
+
+        private void cmbGioiTinhDG_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTenDG_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

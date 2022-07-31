@@ -69,8 +69,7 @@ namespace DoAn_QLTV
 
         private void tsCapnhatdocgia_Click(object sender, EventArgs e)
         {
-            Form f = new Form();
-            f.Show();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -138,6 +137,14 @@ namespace DoAn_QLTV
             dtpNgaySinhDG.Text = dgvThongTinDG.Rows[i].Cells[2].Value.ToString();
             txtSDTDG.Text = dgvThongTinDG.Rows[i].Cells[3].Value.ToString();
 
+        }
+
+        private void tsCapnhatnhanvien_Click(object sender, EventArgs e)
+        {
+            frmCapNhatNhanVien f = new frmCapNhatNhanVien();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -1,7 +1,8 @@
-create table DOCGIA
+﻿create table DOCGIA
 (
 	MaDG char(10) primary key,
 	TenDG nvarchar(50), 
+	NgaySinhDG date,
 	GioiTinh nvarchar(5),
 	SDTDG char(10) unique,
 )
@@ -22,8 +23,7 @@ create table NHAXUATBAN
 (
 	MaNXB char(10) primary key,
 	TenNXB nvarchar(50),
-	DiaChiNXB nvarchar(50),
-	SDTNXB char(10) not null,
+	SDTNXB char(10) unique,
 )
 
 create table NHACUNGCAP
@@ -51,6 +51,20 @@ create table PHIEUNHAP
 
 )
 
+create table SACH
+(
+	MaSach char(10) primary key, 
+	TenSach nvarchar(100) not null,
+	TenTacGia nvarchar(50),
+	MaTL char(10),
+	MaNXB char(10),
+	NamXB int,
+	MaKeSach char(10),
+	foreign key (MaKeSach) references KESACH(MaKeSach),
+	foreign key (MaNXB) references NHAXUATBAN(MaNXB),
+	foreign key (MaTL) references THELOAI(MaTL)
+)
+
 create table CT_PHIEUNHAP
 (
 	MaPN char(10),
@@ -61,22 +75,6 @@ create table CT_PHIEUNHAP
 	foreign key (MaPN) references PHIEUNHAP(MaPN),
 	foreign key (MaSach) references SACH(MaSach)
 	
-)
-
-create table SACH
-(
-	MaSach char(10) primary key, 
-	TenSach nvarchar(50) not null,
-	TenTacGia nvarchar(50),
-	NamXB int,
-	MaKeSach char(10),
-	MaNXB char(10),
-	MaTL char(10),
-	SoLuong int check(SoLuong>=0),
-	foreign key (MaKeSach) references KESACH(MaKeSach),
-	foreign key (MaNXB) references NHAXUATBAN(MaNXB),
-	foreign key (MaTL) references THELOAI(MaTL)
-
 )
 
 create table PHIEUMUON
@@ -118,3 +116,35 @@ create table THETV
 	MaDG char(10),
 	foreign key (MaDG) references DOCGIA(MaDG)
 )
+
+create table Account
+(
+	taiKhoan varchar(50),
+	matKhau nvarchar(50) not null,
+	MaDG char(10),
+	MaNV char(10),
+	foreign key (MaDG) references DOCGIA(MaDG),
+	foreign key (MaNV) references NHANVIEN(MaNV)
+)
+GO
+create trigger check_Account on Account 
+for insert as
+BEGIN
+	IF exists (
+				select taiKhoan, matKhau 
+				from Account
+				group by taiKhoan, matKhau
+				having LEN(taiKhoan) < 6 or LEN(matKhau) < 6
+			  )
+	BEGIN
+		PRINT N'Tài khoản và mật khẩu phải có tối thiểu 6 ký tự'
+		ROLLBACK TRAN
+	END
+END
+	
+go
+
+drop trigger check_Account
+
+
+

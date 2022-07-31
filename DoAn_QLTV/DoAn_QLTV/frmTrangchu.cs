@@ -52,5 +52,13 @@ namespace DoAn_QLTV
             f.ShowDialog();
             this.Show();
         }
+
+        private void tsCapnhatnhanvien_Click(object sender, EventArgs e)
+        {
+            frmCapNhatNhanVien f = new frmCapNhatNhanVien();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }
