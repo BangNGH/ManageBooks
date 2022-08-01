@@ -100,7 +100,12 @@ namespace DoAn_QLTV
 
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
                 
+=======
+            //Anh code phan nay
+            //ok a
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
         }
 
         private void btnXoaDG_Click(object sender, EventArgs e)

@@ -1,11 +1,14 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-
-namespace DoAn_QLTV
+namespace FormDocGia
 {
     public partial class frmCapNhatNhanVien : Form
     {
@@ -27,6 +30,7 @@ namespace DoAn_QLTV
         public frmCapNhatNhanVien()
         {
             InitializeComponent();
+<<<<<<< HEAD
 
         }
 
@@ -38,10 +42,16 @@ namespace DoAn_QLTV
         }
 
         private void mượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
+=======
+        }
+
+        private void pnlChucNangDG_Paint(object sender, PaintEventArgs e)
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
         {
 
         }
 
+<<<<<<< HEAD
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -96,6 +106,9 @@ namespace DoAn_QLTV
         }
 
         private void label4_Click(object sender, EventArgs e)
+=======
+        private void Form1_Load(object sender, EventArgs e)
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
         {
 
         }
@@ -105,11 +118,16 @@ namespace DoAn_QLTV
 
         }
 
+<<<<<<< HEAD
         private void btnSuaNV_Click(object sender, EventArgs e)
+=======
+        private void txtSDTDG_TextChanged(object sender, EventArgs e)
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
         {
 
         }
 
+<<<<<<< HEAD
         private void btnXoaNV_Click(object sender, EventArgs e)
         {
 
@@ -145,6 +163,9 @@ namespace DoAn_QLTV
         }
 
         private void cmbGioiTinhNV_SelectedIndexChanged(object sender, EventArgs e)
+=======
+        private void lblMaDG_Click(object sender, EventArgs e)
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
         {
 
         }
@@ -154,16 +175,116 @@ namespace DoAn_QLTV
 
         }
 
+<<<<<<< HEAD
         private void label1_Click_2(object sender, EventArgs e)
+=======
+        private void lblGioiTinh_Click(object sender, EventArgs e)
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
         {
 
         }
 
+<<<<<<< HEAD
         private void dtpNgaySinhNV_ValueChanged(object sender, EventArgs e)
+=======
+        private void lblNgaySinh_Click(object sender, EventArgs e)
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
         {
 
         }
 
+<<<<<<< HEAD
     
+=======
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+                    
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thoat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void luu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void them_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtmanhanvien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttennhanvien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ngaysinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comgioitinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> f51305e939c9b8181b8f1bfbc116155c18fb0f09
     }
 }
