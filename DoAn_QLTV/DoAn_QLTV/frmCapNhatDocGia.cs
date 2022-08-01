@@ -105,6 +105,7 @@ namespace DoAn_QLTV
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
             //Anh code phan nay
+            //ok a
         }
 
         private void btnXoaDG_Click(object sender, EventArgs e)
