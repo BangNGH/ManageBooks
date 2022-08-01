@@ -119,7 +119,8 @@ create table THETV
 
 create table Account
 (
-	taiKhoan varchar(50),
+	id int identity(1,1) primary key,
+	taiKhoan varchar(50) unique,
 	matKhau nvarchar(50) not null,
 	MaDG char(10),
 	MaNV char(10),

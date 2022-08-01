@@ -3,46 +3,52 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Data;
-
+using System.Configuration;
 
 namespace DoAn_QLTV
 {
     public partial class frmCapNhatDocGia : Form
     {
-        public frmCapNhatDocGia()
-        {
-            InitializeComponent();
-            loadThongTinDG();
-        }
+        SqlConnection connection;
+        SqlCommand command;
+        string str = @"Data Source=NONAME\SQLEXPRESS;Initial Catalog=DOAnQLTV;Integrated Security=True";
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable table = new DataTable();
 
         void loadThongTinDG()
         {
-            string str = @"Data Source=NONAME\SQLEXPRESS;Initial Catalog=DOAnQLTV;Integrated Security=True";
-            SqlConnection connection = new SqlConnection(str);
-
-            string query = "select * from DOCGIA";
-            connection.Open();
-            SqlCommand command = new SqlCommand(query, connection);
-            DataTable data = new DataTable();
-
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            adapter.Fill(data);
-            connection.Close();
-            dgvThongTinDG.DataSource = data;
-
+           command = connection.CreateCommand();
+           command.CommandText = "select * from DOCGIA";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dgvThongTinDG.DataSource = table;
         }
-
-        private void frmCapNhatDocGia_Load(object sender, EventArgs e)
+        public frmCapNhatDocGia()
         {
+            InitializeComponent();
             
         }
 
-        private void mượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        
 
+        private void frmCapNhatDocGia_Load(object sender, EventArgs e)
+        {
+            txtMaDG.Enabled = false;
+            txtTenDG.Enabled = false;
+            txtSDTDG.Enabled = false;
+            cmbGioiTinhDG.Enabled = false;
+            dtpNgaySinhDG.Enabled = false;
+            btnLuuDG.Enabled = false;
+            btnKhongLuuDG.Enabled = false;
+
+
+            connection = new SqlConnection(str);
+            connection.Open();
+            loadThongTinDG();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void mượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -53,11 +59,6 @@ namespace DoAn_QLTV
         }
 
         private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
         {
 
         }
@@ -82,11 +83,6 @@ namespace DoAn_QLTV
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Close();
@@ -104,7 +100,7 @@ namespace DoAn_QLTV
 
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
-
+                
         }
 
         private void btnXoaDG_Click(object sender, EventArgs e)
@@ -114,6 +110,25 @@ namespace DoAn_QLTV
 
         private void btnThemDG_Click(object sender, EventArgs e)
         {
+            txtMaDG.Enabled = true;
+            txtTenDG.Enabled = true;
+            txtSDTDG.Enabled = true;
+            cmbGioiTinhDG.Enabled = true;
+            dtpNgaySinhDG.Enabled = true;
+            btnLuuDG.Enabled = true;
+            btnKhongLuuDG.Enabled = true;
+            btnSuaDG.Enabled = false;
+            btnXoaDG.Enabled = false;
+            btnThemDG.Enabled = false;
+
+            dgvThongTinDG.Enabled = false;
+
+            txtMaDG.Text = "";
+            txtSDTDG.Text = "";
+            txtTenDG.Text = "";
+            cmbGioiTinhDG.Text = "";
+            dtpNgaySinhDG.Text = "";
+            txtMaDG.Focus();
 
         }
 
@@ -124,6 +139,43 @@ namespace DoAn_QLTV
 
         private void btnLuuDG_Click(object sender, EventArgs e)
         {
+            if(txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập điền đủ thông tin!", "Thông báo", MessageBoxButtons.OK);
+                txtMaDG.Text = "";
+                txtSDTDG.Text = "";
+                txtTenDG.Text = "";
+                cmbGioiTinhDG.Text = "";
+                dtpNgaySinhDG.Text = "";
+                txtMaDG.Focus();
+            }
+            else
+            {
+                try
+                {
+                   command = connection.CreateCommand();
+                   command.CommandText = "insert into DOCGIA values('" + txtMaDG.Text + "',N'" + txtTenDG.Text + "', '" + dtpNgaySinhDG.Text + "',N'" + cmbGioiTinhDG.Text + "', '" + txtSDTDG.Text + "')";
+                   command.ExecuteNonQuery();
+                loadThongTinDG();
+                }
+                catch (Exception loi)
+                {  
+                    MessageBox.Show("Vui lòng kiểm tra dữ liệu nhập!", "Thông Báo", MessageBoxButtons.OK);
+                }
+                
+            }
+            dgvThongTinDG.Enabled = true;
+            txtMaDG.Enabled = false;
+            txtTenDG.Enabled = false;
+            txtSDTDG.Enabled = false;
+            cmbGioiTinhDG.Enabled = false;
+            dtpNgaySinhDG.Enabled = false;
+            btnLuuDG.Enabled = false;
+            btnKhongLuuDG.Enabled = false;
+            btnThemDG.Enabled = true;
+            btnXoaDG.Enabled = true;
+            btnSuaDG.Enabled = true;    
+
 
         }
 
@@ -133,9 +185,9 @@ namespace DoAn_QLTV
             i = dgvThongTinDG.CurrentRow.Index;
             txtMaDG.Text = dgvThongTinDG.Rows[i].Cells[0].Value.ToString();
             txtTenDG.Text = dgvThongTinDG.Rows[i].Cells[1].Value.ToString();
-            cmbGioiTinhDG.Text = dgvThongTinDG.Rows[i].Cells[4].Value.ToString();
+            cmbGioiTinhDG.Text = dgvThongTinDG.Rows[i].Cells[3].Value.ToString();
             dtpNgaySinhDG.Text = dgvThongTinDG.Rows[i].Cells[2].Value.ToString();
-            txtSDTDG.Text = dgvThongTinDG.Rows[i].Cells[3].Value.ToString();
+            txtSDTDG.Text = dgvThongTinDG.Rows[i].Cells[4].Value.ToString();
 
         }
 
@@ -145,6 +197,16 @@ namespace DoAn_QLTV
             this.Hide();
             f.ShowDialog();
             this.Show();
+        }
+
+        private void dgvThongTinDG_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

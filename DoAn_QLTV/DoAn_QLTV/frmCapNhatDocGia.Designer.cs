@@ -55,6 +55,7 @@
             this.pnlChucNangDG = new System.Windows.Forms.Panel();
             this.grbThongTinDG = new System.Windows.Forms.GroupBox();
             this.cmbGioiTinhDG = new System.Windows.Forms.ComboBox();
+            this.btnKhongLuuDG = new System.Windows.Forms.Button();
             this.dtpNgaySinhDG = new System.Windows.Forms.DateTimePicker();
             this.txtSDTDG = new System.Windows.Forms.TextBox();
             this.txtTenDG = new System.Windows.Forms.TextBox();
@@ -90,7 +91,7 @@
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip2.Size = new System.Drawing.Size(533, 47);
+            this.menuStrip2.Size = new System.Drawing.Size(620, 47);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
@@ -229,9 +230,9 @@
             // 
             // btnThemDG
             // 
-            this.btnThemDG.Location = new System.Drawing.Point(3, 0);
+            this.btnThemDG.Location = new System.Drawing.Point(0, 0);
             this.btnThemDG.Name = "btnThemDG";
-            this.btnThemDG.Size = new System.Drawing.Size(75, 23);
+            this.btnThemDG.Size = new System.Drawing.Size(90, 24);
             this.btnThemDG.TabIndex = 13;
             this.btnThemDG.Text = "Thêm";
             this.btnThemDG.UseVisualStyleBackColor = true;
@@ -239,9 +240,9 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(411, 0);
+            this.btnThoat.Location = new System.Drawing.Point(507, 1);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 21);
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 14;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -249,9 +250,9 @@
             // 
             // btnXoaDG
             // 
-            this.btnXoaDG.Location = new System.Drawing.Point(112, 0);
+            this.btnXoaDG.Location = new System.Drawing.Point(108, 0);
             this.btnXoaDG.Name = "btnXoaDG";
-            this.btnXoaDG.Size = new System.Drawing.Size(75, 23);
+            this.btnXoaDG.Size = new System.Drawing.Size(75, 24);
             this.btnXoaDG.TabIndex = 15;
             this.btnXoaDG.Text = "Xóa";
             this.btnXoaDG.UseVisualStyleBackColor = true;
@@ -259,7 +260,7 @@
             // 
             // btnSuaDG
             // 
-            this.btnSuaDG.Location = new System.Drawing.Point(218, 0);
+            this.btnSuaDG.Location = new System.Drawing.Point(207, 1);
             this.btnSuaDG.Name = "btnSuaDG";
             this.btnSuaDG.Size = new System.Drawing.Size(75, 23);
             this.btnSuaDG.TabIndex = 16;
@@ -269,9 +270,9 @@
             // 
             // btnLuuDG
             // 
-            this.btnLuuDG.Location = new System.Drawing.Point(315, 0);
+            this.btnLuuDG.Location = new System.Drawing.Point(309, 0);
             this.btnLuuDG.Name = "btnLuuDG";
-            this.btnLuuDG.Size = new System.Drawing.Size(75, 23);
+            this.btnLuuDG.Size = new System.Drawing.Size(75, 24);
             this.btnLuuDG.TabIndex = 17;
             this.btnLuuDG.Text = "Lưu";
             this.btnLuuDG.UseVisualStyleBackColor = true;
@@ -281,14 +282,15 @@
             // 
             this.pnlChucNangDG.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
             this.pnlChucNangDG.Controls.Add(this.btnThemDG);
+            this.pnlChucNangDG.Controls.Add(this.btnKhongLuuDG);
             this.pnlChucNangDG.Controls.Add(this.btnThoat);
             this.pnlChucNangDG.Controls.Add(this.btnLuuDG);
             this.pnlChucNangDG.Controls.Add(this.btnXoaDG);
             this.pnlChucNangDG.Controls.Add(this.btnSuaDG);
             this.pnlChucNangDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlChucNangDG.Location = new System.Drawing.Point(15, 226);
+            this.pnlChucNangDG.Location = new System.Drawing.Point(24, 226);
             this.pnlChucNangDG.Name = "pnlChucNangDG";
-            this.pnlChucNangDG.Size = new System.Drawing.Size(489, 24);
+            this.pnlChucNangDG.Size = new System.Drawing.Size(596, 24);
             this.pnlChucNangDG.TabIndex = 18;
             // 
             // grbThongTinDG
@@ -305,7 +307,7 @@
             this.grbThongTinDG.Controls.Add(this.lblNgaySinh);
             this.grbThongTinDG.Controls.Add(this.label4);
             this.grbThongTinDG.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
-            this.grbThongTinDG.Location = new System.Drawing.Point(15, 63);
+            this.grbThongTinDG.Location = new System.Drawing.Point(75, 50);
             this.grbThongTinDG.Name = "grbThongTinDG";
             this.grbThongTinDG.Size = new System.Drawing.Size(494, 157);
             this.grbThongTinDG.TabIndex = 20;
@@ -315,6 +317,7 @@
             // 
             // cmbGioiTinhDG
             // 
+            this.cmbGioiTinhDG.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.cmbGioiTinhDG.FormattingEnabled = true;
             this.cmbGioiTinhDG.Items.AddRange(new object[] {
             "Nam",
@@ -322,8 +325,18 @@
             "Khác"});
             this.cmbGioiTinhDG.Location = new System.Drawing.Point(108, 119);
             this.cmbGioiTinhDG.Name = "cmbGioiTinhDG";
-            this.cmbGioiTinhDG.Size = new System.Drawing.Size(121, 27);
+            this.cmbGioiTinhDG.Size = new System.Drawing.Size(100, 23);
             this.cmbGioiTinhDG.TabIndex = 12;
+            // 
+            // btnKhongLuuDG
+            // 
+            this.btnKhongLuuDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnKhongLuuDG.Location = new System.Drawing.Point(396, 0);
+            this.btnKhongLuuDG.Name = "btnKhongLuuDG";
+            this.btnKhongLuuDG.Size = new System.Drawing.Size(94, 24);
+            this.btnKhongLuuDG.TabIndex = 18;
+            this.btnKhongLuuDG.Text = "Không Lưu";
+            this.btnKhongLuuDG.UseVisualStyleBackColor = true;
             // 
             // dtpNgaySinhDG
             // 
@@ -336,23 +349,26 @@
             // 
             // txtSDTDG
             // 
+            this.txtSDTDG.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.txtSDTDG.Location = new System.Drawing.Point(360, 71);
             this.txtSDTDG.Name = "txtSDTDG";
-            this.txtSDTDG.Size = new System.Drawing.Size(100, 27);
+            this.txtSDTDG.Size = new System.Drawing.Size(100, 21);
             this.txtSDTDG.TabIndex = 10;
             // 
             // txtTenDG
             // 
+            this.txtTenDG.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.txtTenDG.Location = new System.Drawing.Point(108, 72);
             this.txtTenDG.Name = "txtTenDG";
-            this.txtTenDG.Size = new System.Drawing.Size(100, 27);
+            this.txtTenDG.Size = new System.Drawing.Size(100, 21);
             this.txtTenDG.TabIndex = 9;
             // 
             // txtMaDG
             // 
+            this.txtMaDG.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaDG.Location = new System.Drawing.Point(108, 30);
             this.txtMaDG.Name = "txtMaDG";
-            this.txtMaDG.Size = new System.Drawing.Size(100, 27);
+            this.txtMaDG.Size = new System.Drawing.Size(100, 21);
             this.txtMaDG.TabIndex = 8;
             // 
             // lblTenDG
@@ -412,11 +428,13 @@
             // 
             this.dgvThongTinDG.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvThongTinDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThongTinDG.Location = new System.Drawing.Point(0, 278);
+            this.dgvThongTinDG.Location = new System.Drawing.Point(0, 256);
             this.dgvThongTinDG.Name = "dgvThongTinDG";
             this.dgvThongTinDG.RowHeadersWidth = 51;
-            this.dgvThongTinDG.Size = new System.Drawing.Size(533, 183);
+            this.dgvThongTinDG.Size = new System.Drawing.Size(620, 314);
             this.dgvThongTinDG.TabIndex = 21;
+            this.dgvThongTinDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinDG_CellContentClick);
+            this.dgvThongTinDG.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinDG_CellContentDoubleClick);
             // 
             // frmCapNhatDocGia
             // 
@@ -424,7 +442,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
-            this.ClientSize = new System.Drawing.Size(533, 574);
+            this.ClientSize = new System.Drawing.Size(620, 574);
             this.Controls.Add(this.dgvThongTinDG);
             this.Controls.Add(this.grbThongTinDG);
             this.Controls.Add(this.pnlChucNangDG);
@@ -483,6 +501,7 @@
         private System.Windows.Forms.DateTimePicker dtpNgaySinhDG;
         private System.Windows.Forms.ComboBox cmbGioiTinhDG;
         private System.Windows.Forms.DataGridView dgvThongTinDG;
+        private System.Windows.Forms.Button btnKhongLuuDG;
     }
 }
 
