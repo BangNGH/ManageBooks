@@ -49,11 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCapNhatSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCapNhatSach.Designer.cs">
+      <DependentUpon>FrmCapNhatSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCapNhatNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCapNhatNhanVien.Designer.cs">
       <DependentUpon>frmCapNhatNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCapNhatTL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCapNhatTL.Designer.cs">
+      <DependentUpon>FrmCapNhatTL.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
@@ -75,11 +87,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCapNhatSach.resx">
+      <DependentUpon>FrmCapNhatSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCapNhatDocGia.resx">
       <DependentUpon>frmCapNhatDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCapNhatNhanVien.resx">
       <DependentUpon>frmCapNhatNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCapNhatTL.resx">
+      <DependentUpon>FrmCapNhatTL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>

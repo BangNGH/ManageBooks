@@ -60,5 +60,15 @@ namespace DoAn_QLTV
             f.ShowDialog();
             this.Show();
         }
+
+        private void tsCapnhatsach_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

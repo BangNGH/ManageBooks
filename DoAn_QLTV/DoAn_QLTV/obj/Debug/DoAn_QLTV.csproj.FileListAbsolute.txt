@@ -12,3 +12,5 @@ D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmTrangchu.resources
 D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmDangNhap.resources
 D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCapNhatDocGia.resources
 D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCapNhatNhanVien.resources
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.FrmCapNhatSach.resources
+D:\CNPM\QLThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.FrmCapNhatTL.resources

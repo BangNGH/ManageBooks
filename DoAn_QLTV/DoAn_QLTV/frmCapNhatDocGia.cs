@@ -41,6 +41,13 @@ namespace DoAn_QLTV
             dtpNgaySinhDG.Enabled = false;
             btnLuuDG.Enabled = false;
             btnKhongLuuDG.Enabled = false;
+            btnThemDG.Enabled = true;
+            btnXoaDG.Enabled = true;
+            btnSuaDG.Enabled = true;
+            txtMaDG.Text = "";
+            txtSDTDG.Text = "";
+            txtTenDG.Text = "";
+            cmbGioiTinhDG.Text = "";
 
 
             connection = new SqlConnection(str);
@@ -105,7 +112,30 @@ namespace DoAn_QLTV
 
         private void btnXoaDG_Click(object sender, EventArgs e)
         {
-
+            if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
+            {
+                MessageBox.Show("Hãy Click vào độc giả muốn xóa!", "Thông báo", MessageBoxButtons.OK);
+            }
+            
+            try
+            {
+               command = connection.CreateCommand();
+               command.CommandText = "delete from DOCGIA where MaDG = '"+txtMaDG.Text+"' ";
+               command.ExecuteNonQuery();
+               loadThongTinDG();
+                txtMaDG.Text = "";
+                txtSDTDG.Text = "";
+                txtTenDG.Text = "";
+                cmbGioiTinhDG.Text = "";
+            }
+            catch (Exception loi)
+            {
+                MessageBox.Show("Không thể xóa vì có quan hệ với bảng khác ", "Thông Báo", MessageBoxButtons.OK);
+                txtMaDG.Text = "";
+                txtSDTDG.Text = "";
+                txtTenDG.Text = "";
+                cmbGioiTinhDG.Text = "";
+            }
         }
 
         private void btnThemDG_Click(object sender, EventArgs e)
@@ -120,14 +150,12 @@ namespace DoAn_QLTV
             btnSuaDG.Enabled = false;
             btnXoaDG.Enabled = false;
             btnThemDG.Enabled = false;
-
             dgvThongTinDG.Enabled = false;
 
             txtMaDG.Text = "";
             txtSDTDG.Text = "";
             txtTenDG.Text = "";
             cmbGioiTinhDG.Text = "";
-            dtpNgaySinhDG.Text = "";
             txtMaDG.Focus();
 
         }
@@ -139,15 +167,12 @@ namespace DoAn_QLTV
 
         private void btnLuuDG_Click(object sender, EventArgs e)
         {
-            if(txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
+
+
+            if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập điền đủ thông tin!", "Thông báo", MessageBoxButtons.OK);
-                txtMaDG.Text = "";
-                txtSDTDG.Text = "";
-                txtTenDG.Text = "";
-                cmbGioiTinhDG.Text = "";
-                dtpNgaySinhDG.Text = "";
-                txtMaDG.Focus();
+                
             }
             else
             {
@@ -156,26 +181,46 @@ namespace DoAn_QLTV
                    command = connection.CreateCommand();
                    command.CommandText = "insert into DOCGIA values('" + txtMaDG.Text + "',N'" + txtTenDG.Text + "', '" + dtpNgaySinhDG.Text + "',N'" + cmbGioiTinhDG.Text + "', '" + txtSDTDG.Text + "')";
                    command.ExecuteNonQuery();
-                loadThongTinDG();
+                   loadThongTinDG();
+
+                    txtMaDG.Text = "";
+                    txtSDTDG.Text = "";
+                    txtTenDG.Text = "";
+                    cmbGioiTinhDG.Text = "";
+                    txtMaDG.Enabled = false;
+                    txtTenDG.Enabled = false;
+                    txtSDTDG.Enabled = false;
+                    cmbGioiTinhDG.Enabled = false;
+                    dtpNgaySinhDG.Enabled = false;
+                    btnLuuDG.Enabled = false;
+                    btnKhongLuuDG.Enabled = false;
+                    btnThemDG.Enabled = true;
+                    btnXoaDG.Enabled = true;
+                    btnSuaDG.Enabled = true;
                 }
                 catch (Exception loi)
                 {  
                     MessageBox.Show("Vui lòng kiểm tra dữ liệu nhập!", "Thông Báo", MessageBoxButtons.OK);
-                }
-                
-            }
-            dgvThongTinDG.Enabled = true;
-            txtMaDG.Enabled = false;
-            txtTenDG.Enabled = false;
-            txtSDTDG.Enabled = false;
-            cmbGioiTinhDG.Enabled = false;
-            dtpNgaySinhDG.Enabled = false;
-            btnLuuDG.Enabled = false;
-            btnKhongLuuDG.Enabled = false;
-            btnThemDG.Enabled = true;
-            btnXoaDG.Enabled = true;
-            btnSuaDG.Enabled = true;    
 
+                }
+
+                txtMaDG.Text = "";
+                txtSDTDG.Text = "";
+                txtTenDG.Text = "";
+                cmbGioiTinhDG.Text = "";
+                txtMaDG.Enabled = false;
+                txtTenDG.Enabled = false;
+                txtSDTDG.Enabled = false;
+                cmbGioiTinhDG.Enabled = false;
+                dtpNgaySinhDG.Enabled = false;
+                btnLuuDG.Enabled = false;
+                btnKhongLuuDG.Enabled = false;
+                btnThemDG.Enabled = true;
+                btnXoaDG.Enabled = true;
+                btnSuaDG.Enabled = true;
+            }
+
+            
 
         }
 
@@ -207,6 +252,19 @@ namespace DoAn_QLTV
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnKhongLuuDG_Click(object sender, EventArgs e)
+        {
+            frmCapNhatDocGia_Load(sender, e);
+        }
+
+        private void tsCapnhatnhanvien_Click_1(object sender, EventArgs e)
+        {
+            frmCapNhatNhanVien f = new frmCapNhatNhanVien();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

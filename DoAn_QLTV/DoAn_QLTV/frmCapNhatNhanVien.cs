@@ -53,11 +53,6 @@ namespace DoAn_QLTV
 
         }
 
-        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -216,6 +211,14 @@ namespace DoAn_QLTV
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void tsCapnhatdocgia_Click_1(object sender, EventArgs e)
+        {
+            frmCapNhatDocGia f = new frmCapNhatDocGia();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }
