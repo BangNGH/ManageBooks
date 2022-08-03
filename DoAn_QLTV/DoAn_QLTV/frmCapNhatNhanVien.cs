@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Threading.Tasks;
 using System.Data;
-using System.Configuration;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace DoAn_QLTV
 {

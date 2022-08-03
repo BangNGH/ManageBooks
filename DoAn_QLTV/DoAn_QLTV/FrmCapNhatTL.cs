@@ -21,5 +21,10 @@ namespace DoAn_QLTV
         {
 
         }
+
+        private void dgvThongTinTL_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

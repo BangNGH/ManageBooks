@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DoAn_QLTV
@@ -35,27 +28,38 @@ namespace DoAn_QLTV
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=NONAME\SQLEXPRESS;Initial Catalog=DOAnQLTV;Integrated Security=True";
-            SqlConnection connection = new SqlConnection(str);
-            connection.Open();
             string taiKhoan = txtTenDangNhap.Text;
             string matKhau = txtMatKhau.Text;
-            string query = "select taiKhoan, matKhau from Account where taiKhoan = '" + taiKhoan + "' and matKhau = '" + matKhau +"'";
-            SqlCommand command = new SqlCommand(query, connection);
-            SqlDataReader data = command.ExecuteReader();
-            if(data.Read() == false)
+            if (taiKhoan.Trim() == "")
             {
-                MessageBox.Show("Sai Tài Khoản Hoặc Mật Khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập tài khoản!");
+            }
+            else if (matKhau.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu!");
             }
             else
             {
-                frmTrangchu f = new frmTrangchu();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
+                string str = @"Data Source=NONAME\SQLEXPRESS;Initial Catalog=DOAnQLTV;Integrated Security=True";
+                SqlConnection connection = new SqlConnection(str);
+                connection.Open();
+
+                string query = "select taiKhoan, matKhau from Account where taiKhoan = '" + taiKhoan + "' and matKhau = '" + matKhau + "'";
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader data = command.ExecuteReader();
+                if (data.Read() == false)
+                {
+                    MessageBox.Show("Sai Tài Khoản Hoặc Mật Khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    RbFTrangChu f = new RbFTrangChu();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
             }
         }
-
         private void btThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -63,8 +67,8 @@ namespace DoAn_QLTV
 
         private void fDangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(MessageBox.Show("Xác nhận thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK )
-            e.Cancel = true;
+            if (MessageBox.Show("Xác nhận thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                e.Cancel = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

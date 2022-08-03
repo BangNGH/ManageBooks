@@ -84,7 +84,7 @@
             // 
             // btThoat
             // 
-            this.btThoat.Location = new System.Drawing.Point(406, 377);
+            this.btThoat.Location = new System.Drawing.Point(306, 368);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(75, 23);
             this.btThoat.TabIndex = 7;
@@ -94,7 +94,7 @@
             // 
             // btDangNhap
             // 
-            this.btDangNhap.Location = new System.Drawing.Point(304, 377);
+            this.btDangNhap.Location = new System.Drawing.Point(204, 368);
             this.btDangNhap.Name = "btDangNhap";
             this.btDangNhap.Size = new System.Drawing.Size(75, 23);
             this.btDangNhap.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             this.panel3.Controls.Add(this.txtMatKhau);
             this.panel3.Controls.Add(this.lblMatKhau);
-            this.panel3.Location = new System.Drawing.Point(263, 331);
+            this.panel3.Location = new System.Drawing.Point(171, 320);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 25);
             this.panel3.TabIndex = 5;
@@ -115,7 +115,7 @@
             // 
             this.panel2.Controls.Add(this.txtTenDangNhap);
             this.panel2.Controls.Add(this.lblTenDangNhap);
-            this.panel2.Location = new System.Drawing.Point(263, 284);
+            this.panel2.Location = new System.Drawing.Point(171, 260);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(263, 28);
             this.panel2.TabIndex = 4;
@@ -125,7 +125,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(299, 230);
+            this.label1.Location = new System.Drawing.Point(199, 214);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 29);
             this.label1.TabIndex = 6;
@@ -138,24 +138,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::DoAn_QLTV.Properties.Resources._3;
-            this.pictureBox1.Location = new System.Drawing.Point(263, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(171, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 199);
-            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.Size = new System.Drawing.Size(258, 199);
+            this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._21;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(636, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btDangNhap);
             this.Controls.Add(this.btThoat);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -181,8 +180,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btDangNhap;
         private System.Windows.Forms.Button btThoat;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

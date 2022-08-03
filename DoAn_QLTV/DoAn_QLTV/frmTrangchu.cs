@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace DoAn_QLTV
 {
-    public partial class frmTrangchu : Form
+    public partial class frmTrangchu : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public frmTrangchu()
         {
@@ -37,7 +37,7 @@ namespace DoAn_QLTV
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -69,6 +69,16 @@ namespace DoAn_QLTV
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnTaoTaiKhoan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
