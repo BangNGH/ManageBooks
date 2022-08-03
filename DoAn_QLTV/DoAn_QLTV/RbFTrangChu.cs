@@ -65,6 +65,7 @@ namespace DoAn_QLTV
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Close();
+
         }
 
         private void RbFTrangChu_Load(object sender, EventArgs e)
@@ -78,6 +79,19 @@ namespace DoAn_QLTV
             this.Hide();
             f.ShowDialog();
             this.Show();
+        }
+
+        private void btnMuonSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLapPhieuMuon_Tra f = new frmLapPhieuMuon_Tra();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnTraCuuSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

@@ -11,6 +11,7 @@ namespace DoAn_QLTV
             InitializeComponent();
         }
 
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -56,7 +57,10 @@ namespace DoAn_QLTV
                     RbFTrangChu f = new RbFTrangChu();
                     this.Hide();
                     f.ShowDialog();
+                    txtMatKhau.Text = "";
+                    txtTenDangNhap.Text = "";
                     this.Show();
+
                 }
             }
         }
@@ -65,7 +69,7 @@ namespace DoAn_QLTV
             Application.Exit();
         }
 
-        private void fDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Xác nhận thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
                 e.Cancel = true;
@@ -99,6 +103,11 @@ namespace DoAn_QLTV
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void frmDangNhap_Load(object sender, FormClosingEventArgs e)
+        {
+            txtMatKhau.Text = "";
+            txtTenDangNhap.Text = "";
         }
     }
 }

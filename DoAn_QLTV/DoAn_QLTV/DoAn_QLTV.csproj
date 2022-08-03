@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBaoCaoThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoThongKe.Designer.cs">
+      <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCapNhatSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     <Compile Include="FrmCapNhatTL.Designer.cs">
       <DependentUpon>FrmCapNhatTL.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCTPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTPM.Designer.cs">
+      <DependentUpon>frmCTPM.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,11 +97,35 @@
     <Compile Include="frmCapNhatDocGia.Designer.cs">
       <DependentUpon>frmCapNhatDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLapPhieuMuon_Tra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLapPhieuMuon_Tra.Designer.cs">
+      <DependentUpon>frmLapPhieuMuon_Tra.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTaoTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTaoTaiKhoan.Designer.cs">
       <DependentUpon>frmTaoTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraCuuNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraCuuNhanVien.Designer.cs">
+      <DependentUpon>frmTraCuuNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraCuuSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraCuuSach.Designer.cs">
+      <DependentUpon>frmTraCuuSach.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTrangchu.cs">
       <SubType>Form</SubType>
@@ -105,6 +141,9 @@
     <Compile Include="RbFTrangChu.Designer.cs">
       <DependentUpon>RbFTrangChu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmBaoCaoThongKe.resx">
+      <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCapNhatSach.resx">
       <DependentUpon>FrmCapNhatSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,8 +156,17 @@
     <EmbeddedResource Include="FrmCapNhatTL.resx">
       <DependentUpon>FrmCapNhatTL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCTPM.resx">
+      <DependentUpon>frmCTPM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLapPhieuMuon_Tra.resx">
+      <DependentUpon>frmLapPhieuMuon_Tra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTaoTaiKhoan.resx">
       <DependentUpon>frmTaoTaiKhoan.cs</DependentUpon>

@@ -62,7 +62,6 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpMuon_Tra = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpTraCuu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -157,10 +156,11 @@
             // 
             // btnMuonSach
             // 
-            this.btnMuonSach.Caption = "Mượn Sách";
+            this.btnMuonSach.Caption = "Lập Phiếu Mượn";
             this.btnMuonSach.Id = 10;
             this.btnMuonSach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMuonSach.ImageOptions.SvgImage")));
             this.btnMuonSach.Name = "btnMuonSach";
+            this.btnMuonSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMuonSach_ItemClick);
             // 
             // btnTraSach
             // 
@@ -175,6 +175,7 @@
             this.btnTraCuuSach.Id = 12;
             this.btnTraCuuSach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTraCuuSach.ImageOptions.SvgImage")));
             this.btnTraCuuSach.Name = "btnTraCuuSach";
+            this.btnTraCuuSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTraCuuSach_ItemClick);
             // 
             // btnTraCuuNhanVien
             // 
@@ -323,8 +324,7 @@
             // rbpMuon_Tra
             // 
             this.rbpMuon_Tra.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup5});
+            this.ribbonPageGroup3});
             this.rbpMuon_Tra.Name = "rbpMuon_Tra";
             this.rbpMuon_Tra.Text = "Mượn-Trả Sách";
             // 
@@ -332,11 +332,6 @@
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btnMuonSach);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnTraSach);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             // 
             // rbpTraCuu
             // 
@@ -432,7 +427,6 @@
         private DevExpress.XtraBars.BarButtonItem btnTraSach;
         private DevExpress.XtraBars.Ribbon.RibbonPage rbpMuon_Tra;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPage rbpTraCuu;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem btnTraCuuSach;
