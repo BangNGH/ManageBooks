@@ -174,7 +174,7 @@
 
         private System.Windows.Forms.Label lblTenDangNhap;
         private System.Windows.Forms.Label lblMatKhau;
-        private System.Windows.Forms.TextBox txtTenDangNhap;
+        private  System.Windows.Forms.TextBox txtTenDangNhap;
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

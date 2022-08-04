@@ -51,6 +51,7 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.btnDangXuat = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.rbpHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -101,9 +102,10 @@
             this.barButtonItem4,
             this.barButtonItem2,
             this.barButtonItem5,
-            this.btnDangXuat});
+            this.btnDangXuat,
+            this.barStaticItem1});
             this.RbfrmTrangChu.Location = new System.Drawing.Point(0, 0);
-            this.RbfrmTrangChu.MaxItemId = 26;
+            this.RbfrmTrangChu.MaxItemId = 27;
             this.RbfrmTrangChu.Name = "RbfrmTrangChu";
             this.RbfrmTrangChu.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbpHeThong,
@@ -266,6 +268,12 @@
             this.btnDangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangXuat.ImageOptions.SvgImage")));
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "barStaticItem1";
+            this.barStaticItem1.Id = 26;
+            this.barStaticItem1.Name = "barStaticItem1";
             // 
             // rbpHeThong
             // 
@@ -453,5 +461,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
         private DevExpress.XtraBars.BarButtonItem btnDangXuat;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
     }
 }

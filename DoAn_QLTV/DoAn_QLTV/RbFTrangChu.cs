@@ -9,6 +9,8 @@ namespace DoAn_QLTV
             InitializeComponent();
         }
 
+
+
         private void RbfrmTrangChu_Click(object sender, EventArgs e)
         {
 
@@ -34,6 +36,8 @@ namespace DoAn_QLTV
             this.Hide();
             f.ShowDialog();
             this.Show();
+
+
         }
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -43,7 +47,10 @@ namespace DoAn_QLTV
 
         private void btnDoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            frmDoiMatKhau f = new frmDoiMatKhau();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
         private void btnCapNhatSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -93,5 +100,12 @@ namespace DoAn_QLTV
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+
     }
 }

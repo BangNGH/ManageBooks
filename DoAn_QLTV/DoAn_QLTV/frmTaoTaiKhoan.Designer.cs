@@ -37,21 +37,17 @@
             this.lblMatKhauTK = new System.Windows.Forms.Label();
             this.btDangKy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtXacNhanMK = new System.Windows.Forms.TextBox();
             this.lblNhapLaiTK = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmbDG = new System.Windows.Forms.ComboBox();
             this.lblMaTKDG = new System.Windows.Forms.Label();
             this.btThoat = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblMaTKNV = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +75,7 @@
             this.txtTenDangNhap.Location = new System.Drawing.Point(114, 3);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(136, 20);
-            this.txtTenDangNhap.TabIndex = 2;
+            this.txtTenDangNhap.TabIndex = 1;
             // 
             // lblTenTK
             // 
@@ -105,7 +101,7 @@
             this.txtMatKhau.Location = new System.Drawing.Point(114, 1);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(136, 20);
-            this.txtMatKhau.TabIndex = 3;
+            this.txtMatKhau.TabIndex = 2;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // lblMatKhauTK
@@ -120,28 +116,30 @@
             // 
             // btDangKy
             // 
-            this.btDangKy.Location = new System.Drawing.Point(181, 463);
+            this.btDangKy.Location = new System.Drawing.Point(160, 437);
             this.btDangKy.Name = "btDangKy";
             this.btDangKy.Size = new System.Drawing.Size(75, 23);
-            this.btDangKy.TabIndex = 10;
+            this.btDangKy.TabIndex = 5;
             this.btDangKy.Text = "Đăng Ký";
             this.btDangKy.UseVisualStyleBackColor = true;
+            this.btDangKy.Click += new System.EventHandler(this.btDangKy_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtXacNhanMK);
             this.panel1.Controls.Add(this.lblNhapLaiTK);
             this.panel1.Location = new System.Drawing.Point(78, 335);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 28);
             this.panel1.TabIndex = 11;
             // 
-            // textBox1
+            // txtXacNhanMK
             // 
-            this.textBox1.Location = new System.Drawing.Point(180, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtXacNhanMK.Location = new System.Drawing.Point(180, 0);
+            this.txtXacNhanMK.Name = "txtXacNhanMK";
+            this.txtXacNhanMK.Size = new System.Drawing.Size(136, 20);
+            this.txtXacNhanMK.TabIndex = 3;
+            this.txtXacNhanMK.UseSystemPasswordChar = true;
             // 
             // lblNhapLaiTK
             // 
@@ -155,20 +153,20 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.cmbDG);
             this.panel4.Controls.Add(this.lblMaTKDG);
             this.panel4.Location = new System.Drawing.Point(144, 380);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(250, 25);
             this.panel4.TabIndex = 12;
             // 
-            // textBox2
+            // cmbDG
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 1);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.cmbDG.FormattingEnabled = true;
+            this.cmbDG.Location = new System.Drawing.Point(117, 1);
+            this.cmbDG.Name = "cmbDG";
+            this.cmbDG.Size = new System.Drawing.Size(133, 21);
+            this.cmbDG.TabIndex = 4;
             // 
             // lblMaTKDG
             // 
@@ -182,40 +180,13 @@
             // 
             // btThoat
             // 
-            this.btThoat.Location = new System.Drawing.Point(291, 463);
+            this.btThoat.Location = new System.Drawing.Point(261, 437);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(75, 23);
-            this.btThoat.TabIndex = 13;
+            this.btThoat.TabIndex = 6;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.lblMaTKNV);
-            this.panel5.Location = new System.Drawing.Point(144, 420);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 25);
-            this.panel5.TabIndex = 15;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(114, 1);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 20);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.UseSystemPasswordChar = true;
-            // 
-            // lblMaTKNV
-            // 
-            this.lblMaTKNV.AutoSize = true;
-            this.lblMaTKNV.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaTKNV.Location = new System.Drawing.Point(3, 2);
-            this.lblMaTKNV.Name = "lblMaTKNV";
-            this.lblMaTKNV.Size = new System.Drawing.Size(116, 19);
-            this.lblMaTKNV.TabIndex = 1;
-            this.lblMaTKNV.Text = "Mã nhân viên:";
             // 
             // pictureBox1
             // 
@@ -223,9 +194,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::DoAn_QLTV.Properties.Resources._3;
-            this.pictureBox1.Location = new System.Drawing.Point(129, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(151, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(265, 208);
+            this.pictureBox1.Size = new System.Drawing.Size(265, 205);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
@@ -234,9 +205,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._2;
-            this.ClientSize = new System.Drawing.Size(551, 524);
+            this.ClientSize = new System.Drawing.Size(551, 485);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.btThoat);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -256,8 +226,6 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -274,15 +242,12 @@
         private System.Windows.Forms.Label lblMatKhauTK;
         private System.Windows.Forms.Button btDangKy;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblNhapLaiTK;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtXacNhanMK;
         private System.Windows.Forms.Label lblMaTKDG;
         private System.Windows.Forms.Button btThoat;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label lblMaTKNV;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cmbDG;
     }
 }

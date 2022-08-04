@@ -1,4 +1,6 @@
-﻿namespace DoAn_QLTV
+﻿using System.Windows.Forms;
+
+namespace DoAn_QLTV
 {
     partial class frmCapNhatDocGia
     {
@@ -173,12 +175,14 @@
             // 
             // dtpNgaySinhDG
             // 
+            this.dtpNgaySinhDG.CustomFormat = "MM/dd/yyyy";
             this.dtpNgaySinhDG.Font = new System.Drawing.Font("Arial", 10F);
-            this.dtpNgaySinhDG.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinhDG.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinhDG.Location = new System.Drawing.Point(360, 27);
             this.dtpNgaySinhDG.Name = "dtpNgaySinhDG";
             this.dtpNgaySinhDG.Size = new System.Drawing.Size(100, 23);
             this.dtpNgaySinhDG.TabIndex = 11;
+            this.dtpNgaySinhDG.ValueChanged += new System.EventHandler(this.dtpNgaySinhDG_ValueChanged);
             // 
             // txtSDTDG
             // 
@@ -314,6 +318,7 @@
         private System.Windows.Forms.ComboBox cmbGioiTinhDG;
         private System.Windows.Forms.DataGridView dgvThongTinDG;
         private System.Windows.Forms.Button btnKhongLuuDG;
+        
     }
 }
 

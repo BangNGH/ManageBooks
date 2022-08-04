@@ -58,7 +58,6 @@ namespace DoAn_QLTV
                     this.Hide();
                     f.ShowDialog();
                     txtMatKhau.Text = "";
-                    txtTenDangNhap.Text = "";
                     this.Show();
 
                 }
@@ -107,7 +106,6 @@ namespace DoAn_QLTV
         private void frmDangNhap_Load(object sender, FormClosingEventArgs e)
         {
             txtMatKhau.Text = "";
-            txtTenDangNhap.Text = "";
         }
     }
 }

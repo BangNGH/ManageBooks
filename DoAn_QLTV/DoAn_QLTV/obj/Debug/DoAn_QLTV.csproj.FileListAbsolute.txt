@@ -118,3 +118,8 @@ D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.csproj.CoreCompile
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.csproj.CopyComplete
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.exe
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.pdb
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmBaoCaoThongKe.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCTPM.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmDoiMatKhau.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmLapPhieuMuon_Tra.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmDangKyTk.resources

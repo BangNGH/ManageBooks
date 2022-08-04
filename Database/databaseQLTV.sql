@@ -123,9 +123,7 @@ create table Account
 	taiKhoan varchar(50) unique,
 	matKhau nvarchar(50) not null,
 	MaDG char(10),
-	MaNV char(10),
 	foreign key (MaDG) references DOCGIA(MaDG),
-	foreign key (MaNV) references NHANVIEN(MaNV)
 )
 GO
 create trigger check_Account on Account 
@@ -144,8 +142,6 @@ BEGIN
 END
 	
 go
-
-drop trigger check_Account
 
 
 

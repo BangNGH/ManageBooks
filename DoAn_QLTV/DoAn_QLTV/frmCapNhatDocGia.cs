@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Threading.Tasks;
 using System.Data;
-using System.Configuration;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace DoAn_QLTV
 {
@@ -17,8 +15,8 @@ namespace DoAn_QLTV
 
         void loadThongTinDG()
         {
-           command = connection.CreateCommand();
-           command.CommandText = "select * from DOCGIA";
+            command = connection.CreateCommand();
+            command.CommandText = "select * from DOCGIA";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -27,10 +25,8 @@ namespace DoAn_QLTV
         public frmCapNhatDocGia()
         {
             InitializeComponent();
-            
-        }
 
-        
+        }
 
         private void frmCapNhatDocGia_Load(object sender, EventArgs e)
         {
@@ -48,11 +44,11 @@ namespace DoAn_QLTV
             txtSDTDG.Text = "";
             txtTenDG.Text = "";
             cmbGioiTinhDG.Text = "";
-
-
             connection = new SqlConnection(str);
             connection.Open();
             loadThongTinDG();
+
+
         }
 
         private void mượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,22 +103,45 @@ namespace DoAn_QLTV
 
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
+            txtMaDG.ReadOnly = true;
+            if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
+            {
+                MessageBox.Show("Hãy Click vào độc giả muốn sửa!", "Thông báo", MessageBoxButtons.OK);
+            }
+            try
+            {
 
+                command = connection.CreateCommand();
+                command.CommandText = "update DOCGIA set MaDG = '" + txtMaDG.Text + "' ,TenDG = N'" + txtTenDG.Text + "', NgaySinhDG='" + dtpNgaySinhDG.Text + "',GioiTinh = N'" + cmbGioiTinhDG.Text + "',SDTDG = '" + txtSDTDG.Text + "')"; ;
+                command.ExecuteNonQuery();
+                loadThongTinDG();
+                txtMaDG.Text = "";
+                txtSDTDG.Text = "";
+                txtTenDG.Text = "";
+                cmbGioiTinhDG.Text = "";
+            }
+            catch (Exception loi)
+            {
+                txtMaDG.Text = "";
+                txtSDTDG.Text = "";
+                txtTenDG.Text = "";
+                cmbGioiTinhDG.Text = "";
+            }
         }
 
         private void btnXoaDG_Click(object sender, EventArgs e)
         {
             if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
             {
-                MessageBox.Show("Hãy Click vào độc giả muốn xóa!", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Hãy Click vào độc giả muốn sửa!", "Thông báo", MessageBoxButtons.OK);
             }
-            
+
             try
             {
-               command = connection.CreateCommand();
-               command.CommandText = "delete from DOCGIA where MaDG = '"+txtMaDG.Text+"' ";
-               command.ExecuteNonQuery();
-               loadThongTinDG();
+                command = connection.CreateCommand();
+                command.CommandText = "delete from DOCGIA where MaDG = '" + txtMaDG.Text + "' ";
+                command.ExecuteNonQuery();
+                loadThongTinDG();
                 txtMaDG.Text = "";
                 txtSDTDG.Text = "";
                 txtTenDG.Text = "";
@@ -172,16 +191,16 @@ namespace DoAn_QLTV
             if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập điền đủ thông tin!", "Thông báo", MessageBoxButtons.OK);
-                
+
             }
             else
             {
                 try
                 {
-                   command = connection.CreateCommand();
-                   command.CommandText = "insert into DOCGIA values('" + txtMaDG.Text + "',N'" + txtTenDG.Text + "', '" + dtpNgaySinhDG.Text + "',N'" + cmbGioiTinhDG.Text + "', '" + txtSDTDG.Text + "')";
-                   command.ExecuteNonQuery();
-                   loadThongTinDG();
+                    command = connection.CreateCommand();
+                    command.CommandText = "insert into DOCGIA values('" + txtMaDG.Text + "',N'" + txtTenDG.Text + "','" + dtpNgaySinhDG.Text + "',N'" + cmbGioiTinhDG.Text + "', '" + txtSDTDG.Text + "')";
+                    command.ExecuteNonQuery();
+                    loadThongTinDG();
 
                     txtMaDG.Text = "";
                     txtSDTDG.Text = "";
@@ -197,10 +216,13 @@ namespace DoAn_QLTV
                     btnThemDG.Enabled = true;
                     btnXoaDG.Enabled = true;
                     btnSuaDG.Enabled = true;
+                    dgvThongTinDG.Enabled = true;
                 }
                 catch (Exception loi)
-                {  
-                    MessageBox.Show("Vui lòng kiểm tra dữ liệu nhập!", "Thông Báo", MessageBoxButtons.OK);
+                {
+                    MessageBox.Show(dtpNgaySinhDG.Text);
+                    //MessageBox.Show("Vui lòng kiểm tra dữ liệu nhập!", "Thông Báo", MessageBoxButtons.OK);
+                    MessageBox.Show(loi.Message);
 
                 }
 
@@ -220,7 +242,7 @@ namespace DoAn_QLTV
                 btnSuaDG.Enabled = true;
             }
 
-            
+
 
         }
 
@@ -265,6 +287,11 @@ namespace DoAn_QLTV
             this.Hide();
             f.ShowDialog();
             this.Show();
+        }
+
+        private void dtpNgaySinhDG_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
