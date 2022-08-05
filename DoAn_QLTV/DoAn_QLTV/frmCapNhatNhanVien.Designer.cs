@@ -77,7 +77,7 @@
             this.btnThoatfrmNV.Location = new System.Drawing.Point(507, 1);
             this.btnThoatfrmNV.Name = "btnThoatfrmNV";
             this.btnThoatfrmNV.Size = new System.Drawing.Size(75, 23);
-            this.btnThoatfrmNV.TabIndex = 14;
+            this.btnThoatfrmNV.TabIndex = 16;
             this.btnThoatfrmNV.Text = "Thoát";
             this.btnThoatfrmNV.UseVisualStyleBackColor = true;
             this.btnThoatfrmNV.Click += new System.EventHandler(this.btnThoat_Click);
@@ -87,7 +87,7 @@
             this.btnXoaNV.Location = new System.Drawing.Point(108, 0);
             this.btnXoaNV.Name = "btnXoaNV";
             this.btnXoaNV.Size = new System.Drawing.Size(75, 24);
-            this.btnXoaNV.TabIndex = 15;
+            this.btnXoaNV.TabIndex = 14;
             this.btnXoaNV.Text = "Xóa";
             this.btnXoaNV.UseVisualStyleBackColor = true;
             this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
@@ -97,7 +97,7 @@
             this.btnSuaNV.Location = new System.Drawing.Point(207, 1);
             this.btnSuaNV.Name = "btnSuaNV";
             this.btnSuaNV.Size = new System.Drawing.Size(75, 23);
-            this.btnSuaNV.TabIndex = 16;
+            this.btnSuaNV.TabIndex = 15;
             this.btnSuaNV.Text = "Sửa";
             this.btnSuaNV.UseVisualStyleBackColor = true;
             this.btnSuaNV.Click += new System.EventHandler(this.btnSuaNV_Click);
@@ -125,7 +125,7 @@
             this.pnlChucNangNV.Location = new System.Drawing.Point(12, 188);
             this.pnlChucNangNV.Name = "pnlChucNangNV";
             this.pnlChucNangNV.Size = new System.Drawing.Size(596, 26);
-            this.pnlChucNangNV.TabIndex = 18;
+            this.pnlChucNangNV.TabIndex = 7;
             // 
             // btnKhongLuuNV
             // 
@@ -136,6 +136,7 @@
             this.btnKhongLuuNV.TabIndex = 18;
             this.btnKhongLuuNV.Text = "Không Lưu";
             this.btnKhongLuuNV.UseVisualStyleBackColor = true;
+            this.btnKhongLuuNV.Click += new System.EventHandler(this.btnKhongLuuNV_Click);
             // 
             // grbThongTinNV
             // 
@@ -167,7 +168,7 @@
             this.txtChucVuNV.Location = new System.Drawing.Point(360, 119);
             this.txtChucVuNV.Name = "txtChucVuNV";
             this.txtChucVuNV.Size = new System.Drawing.Size(100, 21);
-            this.txtChucVuNV.TabIndex = 14;
+            this.txtChucVuNV.TabIndex = 6;
             // 
             // lblChucVuNV
             // 
@@ -191,16 +192,17 @@
             this.cmbGioiTinhNV.Location = new System.Drawing.Point(115, 119);
             this.cmbGioiTinhNV.Name = "cmbGioiTinhNV";
             this.cmbGioiTinhNV.Size = new System.Drawing.Size(100, 23);
-            this.cmbGioiTinhNV.TabIndex = 12;
+            this.cmbGioiTinhNV.TabIndex = 3;
             // 
             // dtpNgaySinhNV
             // 
+            this.dtpNgaySinhNV.CustomFormat = "MM/dd/yyyy";
             this.dtpNgaySinhNV.Font = new System.Drawing.Font("Arial", 10F);
-            this.dtpNgaySinhNV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinhNV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinhNV.Location = new System.Drawing.Point(360, 27);
             this.dtpNgaySinhNV.Name = "dtpNgaySinhNV";
             this.dtpNgaySinhNV.Size = new System.Drawing.Size(100, 23);
-            this.dtpNgaySinhNV.TabIndex = 11;
+            this.dtpNgaySinhNV.TabIndex = 4;
             // 
             // txtSDTNV
             // 
@@ -208,7 +210,7 @@
             this.txtSDTNV.Location = new System.Drawing.Point(360, 71);
             this.txtSDTNV.Name = "txtSDTNV";
             this.txtSDTNV.Size = new System.Drawing.Size(100, 21);
-            this.txtSDTNV.TabIndex = 10;
+            this.txtSDTNV.TabIndex = 5;
             // 
             // txtTenNV
             // 
@@ -216,7 +218,7 @@
             this.txtTenNV.Location = new System.Drawing.Point(115, 72);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(100, 21);
-            this.txtTenNV.TabIndex = 9;
+            this.txtTenNV.TabIndex = 2;
             // 
             // txtMaNV
             // 
@@ -224,7 +226,7 @@
             this.txtMaNV.Location = new System.Drawing.Point(115, 30);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(100, 21);
-            this.txtMaNV.TabIndex = 8;
+            this.txtMaNV.TabIndex = 1;
             // 
             // lblTenNV
             // 

@@ -67,7 +67,7 @@ namespace DoAn_QLTV
             this.btnThemDG.Location = new System.Drawing.Point(0, 0);
             this.btnThemDG.Name = "btnThemDG";
             this.btnThemDG.Size = new System.Drawing.Size(90, 24);
-            this.btnThemDG.TabIndex = 13;
+            this.btnThemDG.TabIndex = 6;
             this.btnThemDG.Text = "Thêm";
             this.btnThemDG.UseVisualStyleBackColor = true;
             this.btnThemDG.Click += new System.EventHandler(this.btnThemDG_Click);
@@ -77,7 +77,7 @@ namespace DoAn_QLTV
             this.btnThoat.Location = new System.Drawing.Point(518, 0);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 25);
-            this.btnThoat.TabIndex = 14;
+            this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -87,7 +87,7 @@ namespace DoAn_QLTV
             this.btnXoaDG.Location = new System.Drawing.Point(108, 0);
             this.btnXoaDG.Name = "btnXoaDG";
             this.btnXoaDG.Size = new System.Drawing.Size(75, 24);
-            this.btnXoaDG.TabIndex = 15;
+            this.btnXoaDG.TabIndex = 7;
             this.btnXoaDG.Text = "Xóa";
             this.btnXoaDG.UseVisualStyleBackColor = true;
             this.btnXoaDG.Click += new System.EventHandler(this.btnXoaDG_Click);
@@ -97,7 +97,7 @@ namespace DoAn_QLTV
             this.btnSuaDG.Location = new System.Drawing.Point(207, 1);
             this.btnSuaDG.Name = "btnSuaDG";
             this.btnSuaDG.Size = new System.Drawing.Size(75, 23);
-            this.btnSuaDG.TabIndex = 16;
+            this.btnSuaDG.TabIndex = 8;
             this.btnSuaDG.Text = "Sửa";
             this.btnSuaDG.UseVisualStyleBackColor = true;
             this.btnSuaDG.Click += new System.EventHandler(this.btnSuaDG_Click);
@@ -107,7 +107,7 @@ namespace DoAn_QLTV
             this.btnLuuDG.Location = new System.Drawing.Point(309, 1);
             this.btnLuuDG.Name = "btnLuuDG";
             this.btnLuuDG.Size = new System.Drawing.Size(75, 24);
-            this.btnLuuDG.TabIndex = 17;
+            this.btnLuuDG.TabIndex = 9;
             this.btnLuuDG.Text = "Lưu";
             this.btnLuuDG.UseVisualStyleBackColor = true;
             this.btnLuuDG.Click += new System.EventHandler(this.btnLuuDG_Click);
@@ -133,7 +133,7 @@ namespace DoAn_QLTV
             this.btnKhongLuuDG.Location = new System.Drawing.Point(409, 0);
             this.btnKhongLuuDG.Name = "btnKhongLuuDG";
             this.btnKhongLuuDG.Size = new System.Drawing.Size(94, 24);
-            this.btnKhongLuuDG.TabIndex = 18;
+            this.btnKhongLuuDG.TabIndex = 10;
             this.btnKhongLuuDG.Text = "Không Lưu";
             this.btnKhongLuuDG.UseVisualStyleBackColor = true;
             this.btnKhongLuuDG.Click += new System.EventHandler(this.btnKhongLuuDG_Click);
@@ -171,7 +171,7 @@ namespace DoAn_QLTV
             this.cmbGioiTinhDG.Location = new System.Drawing.Point(108, 119);
             this.cmbGioiTinhDG.Name = "cmbGioiTinhDG";
             this.cmbGioiTinhDG.Size = new System.Drawing.Size(100, 23);
-            this.cmbGioiTinhDG.TabIndex = 12;
+            this.cmbGioiTinhDG.TabIndex = 3;
             // 
             // dtpNgaySinhDG
             // 
@@ -181,7 +181,7 @@ namespace DoAn_QLTV
             this.dtpNgaySinhDG.Location = new System.Drawing.Point(360, 27);
             this.dtpNgaySinhDG.Name = "dtpNgaySinhDG";
             this.dtpNgaySinhDG.Size = new System.Drawing.Size(100, 23);
-            this.dtpNgaySinhDG.TabIndex = 11;
+            this.dtpNgaySinhDG.TabIndex = 4;
             this.dtpNgaySinhDG.ValueChanged += new System.EventHandler(this.dtpNgaySinhDG_ValueChanged);
             // 
             // txtSDTDG
@@ -190,7 +190,7 @@ namespace DoAn_QLTV
             this.txtSDTDG.Location = new System.Drawing.Point(360, 71);
             this.txtSDTDG.Name = "txtSDTDG";
             this.txtSDTDG.Size = new System.Drawing.Size(100, 21);
-            this.txtSDTDG.TabIndex = 10;
+            this.txtSDTDG.TabIndex = 5;
             // 
             // txtTenDG
             // 
@@ -198,7 +198,7 @@ namespace DoAn_QLTV
             this.txtTenDG.Location = new System.Drawing.Point(108, 72);
             this.txtTenDG.Name = "txtTenDG";
             this.txtTenDG.Size = new System.Drawing.Size(100, 21);
-            this.txtTenDG.TabIndex = 9;
+            this.txtTenDG.TabIndex = 2;
             // 
             // txtMaDG
             // 
@@ -206,7 +206,7 @@ namespace DoAn_QLTV
             this.txtMaDG.Location = new System.Drawing.Point(108, 30);
             this.txtMaDG.Name = "txtMaDG";
             this.txtMaDG.Size = new System.Drawing.Size(100, 21);
-            this.txtMaDG.TabIndex = 8;
+            this.txtMaDG.TabIndex = 1;
             // 
             // lblTenDG
             // 

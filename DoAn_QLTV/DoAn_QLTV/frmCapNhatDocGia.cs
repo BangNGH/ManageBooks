@@ -44,6 +44,7 @@ namespace DoAn_QLTV
             txtSDTDG.Text = "";
             txtTenDG.Text = "";
             cmbGioiTinhDG.Text = "";
+
             connection = new SqlConnection(str);
             connection.Open();
             loadThongTinDG();
@@ -71,10 +72,6 @@ namespace DoAn_QLTV
             Close();
         }
 
-        private void tsCapnhatdocgia_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -103,41 +100,34 @@ namespace DoAn_QLTV
 
         private void btnSuaDG_Click(object sender, EventArgs e)
         {
-            txtMaDG.ReadOnly = true;
-            if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
-            {
-                MessageBox.Show("Hãy Click vào độc giả muốn sửa!", "Thông báo", MessageBoxButtons.OK);
-            }
-            try
-            {
+            txtMaDG.Enabled = false;
+            txtTenDG.Enabled = true;
+            txtSDTDG.Enabled = true;
+            cmbGioiTinhDG.Enabled = true;
+            dtpNgaySinhDG.Enabled = true;
+            btnLuuDG.Enabled = true;
+            btnKhongLuuDG.Enabled = true;
+            btnSuaDG.Enabled = false;
+            btnXoaDG.Enabled = false;
+            btnThemDG.Enabled = false;
 
-                command = connection.CreateCommand();
-                command.CommandText = "update DOCGIA set MaDG = '" + txtMaDG.Text + "' ,TenDG = N'" + txtTenDG.Text + "', NgaySinhDG='" + dtpNgaySinhDG.Text + "',GioiTinh = N'" + cmbGioiTinhDG.Text + "',SDTDG = '" + txtSDTDG.Text + "')"; ;
-                command.ExecuteNonQuery();
-                loadThongTinDG();
-                txtMaDG.Text = "";
-                txtSDTDG.Text = "";
-                txtTenDG.Text = "";
-                cmbGioiTinhDG.Text = "";
-            }
-            catch (Exception loi)
-            {
-                txtMaDG.Text = "";
-                txtSDTDG.Text = "";
-                txtTenDG.Text = "";
-                cmbGioiTinhDG.Text = "";
-            }
         }
 
         private void btnXoaDG_Click(object sender, EventArgs e)
         {
             if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
             {
-                MessageBox.Show("Hãy Click vào độc giả muốn sửa!", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Hãy Click vào độc giả muốn xóa!", "Thông báo", MessageBoxButtons.OK);
+                return;
             }
 
             try
             {
+
+                if (MessageBox.Show("Xác nhận xóa độc giả?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                {
+                    return;
+                }
                 command = connection.CreateCommand();
                 command.CommandText = "delete from DOCGIA where MaDG = '" + txtMaDG.Text + "' ";
                 command.ExecuteNonQuery();
@@ -169,14 +159,13 @@ namespace DoAn_QLTV
             btnSuaDG.Enabled = false;
             btnXoaDG.Enabled = false;
             btnThemDG.Enabled = false;
-            dgvThongTinDG.Enabled = false;
+
 
             txtMaDG.Text = "";
             txtSDTDG.Text = "";
             txtTenDG.Text = "";
             cmbGioiTinhDG.Text = "";
             txtMaDG.Focus();
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -186,64 +175,59 @@ namespace DoAn_QLTV
 
         private void btnLuuDG_Click(object sender, EventArgs e)
         {
-
-
-            if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
+            if (txtMaDG.Enabled == true)
             {
-                MessageBox.Show("Vui lòng nhập điền đủ thông tin!", "Thông báo", MessageBoxButtons.OK);
+                if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập điền đủ thông tin!", "Thông báo", MessageBoxButtons.OK);
 
+                }
+                else
+                {
+                    try
+                    {
+                        txtMaDG.Enabled = true;
+                        command = connection.CreateCommand();
+                        command.CommandText = "insert into DOCGIA values('" + txtMaDG.Text + "',N'" + txtTenDG.Text + "','" + dtpNgaySinhDG.Text + "',N'" + cmbGioiTinhDG.Text + "', '" + txtSDTDG.Text + "')";
+                        command.ExecuteNonQuery();
+                        loadThongTinDG();
+
+                    }
+                    catch (Exception loi)
+                    {
+                        MessageBox.Show(loi.Message);
+
+                    }
+
+                }
             }
-            else
+
+
+            if (txtMaDG.Enabled == false)
             {
+                if (txtMaDG.Text == "" || txtTenDG.Text == "" || txtSDTDG.Text == "")
+                {
+                    MessageBox.Show("Hãy Click vào độc giả muốn sửa!", "Thông báo", MessageBoxButtons.OK);
+                    return;
+                }
                 try
                 {
+                    txtMaDG.Enabled = false;
                     command = connection.CreateCommand();
-                    command.CommandText = "insert into DOCGIA values('" + txtMaDG.Text + "',N'" + txtTenDG.Text + "','" + dtpNgaySinhDG.Text + "',N'" + cmbGioiTinhDG.Text + "', '" + txtSDTDG.Text + "')";
+                    command.CommandText = "update DOCGIA set TenDG = N'" + txtTenDG.Text + "', NgaySinhDG='" + dtpNgaySinhDG.Text + "',GioiTinh = N'" + cmbGioiTinhDG.Text + "',SDTDG = '" + txtSDTDG.Text + "' where MaDG = '" + txtMaDG.Text + "'";
                     command.ExecuteNonQuery();
                     loadThongTinDG();
-
                     txtMaDG.Text = "";
                     txtSDTDG.Text = "";
                     txtTenDG.Text = "";
                     cmbGioiTinhDG.Text = "";
-                    txtMaDG.Enabled = false;
-                    txtTenDG.Enabled = false;
-                    txtSDTDG.Enabled = false;
-                    cmbGioiTinhDG.Enabled = false;
-                    dtpNgaySinhDG.Enabled = false;
-                    btnLuuDG.Enabled = false;
-                    btnKhongLuuDG.Enabled = false;
-                    btnThemDG.Enabled = true;
-                    btnXoaDG.Enabled = true;
-                    btnSuaDG.Enabled = true;
-                    dgvThongTinDG.Enabled = true;
                 }
                 catch (Exception loi)
                 {
-                    MessageBox.Show(dtpNgaySinhDG.Text);
-                    //MessageBox.Show("Vui lòng kiểm tra dữ liệu nhập!", "Thông Báo", MessageBoxButtons.OK);
                     MessageBox.Show(loi.Message);
-
                 }
-
-                txtMaDG.Text = "";
-                txtSDTDG.Text = "";
-                txtTenDG.Text = "";
-                cmbGioiTinhDG.Text = "";
-                txtMaDG.Enabled = false;
-                txtTenDG.Enabled = false;
-                txtSDTDG.Enabled = false;
-                cmbGioiTinhDG.Enabled = false;
-                dtpNgaySinhDG.Enabled = false;
-                btnLuuDG.Enabled = false;
-                btnKhongLuuDG.Enabled = false;
-                btnThemDG.Enabled = true;
-                btnXoaDG.Enabled = true;
-                btnSuaDG.Enabled = true;
             }
-
-
-
+            frmCapNhatDocGia_Load(sender, e);
         }
 
         private void dgvThongTinDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -258,13 +242,7 @@ namespace DoAn_QLTV
 
         }
 
-        private void tsCapnhatnhanvien_Click(object sender, EventArgs e)
-        {
-            frmCapNhatNhanVien f = new frmCapNhatNhanVien();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
+
 
         private void dgvThongTinDG_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -279,14 +257,6 @@ namespace DoAn_QLTV
         private void btnKhongLuuDG_Click(object sender, EventArgs e)
         {
             frmCapNhatDocGia_Load(sender, e);
-        }
-
-        private void tsCapnhatnhanvien_Click_1(object sender, EventArgs e)
-        {
-            frmCapNhatNhanVien f = new frmCapNhatNhanVien();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
         }
 
         private void dtpNgaySinhDG_ValueChanged(object sender, EventArgs e)
