@@ -1,84 +1,111 @@
 ﻿using System;
-using System.Windows.Forms;
 
 namespace DoAn_QLTV
 {
-    public partial class frmTrangchu : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class frmTrangChu : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public frmTrangchu()
+        public frmTrangChu()
         {
             InitializeComponent();
         }
 
-        private void frmTrangchu_Load(object sender, EventArgs e)
+
+
+        private void RbfrmTrangChu_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void mượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void tsCapnhatdocgia_Click(object sender, EventArgs e)
+        private void btnCapNhatDocGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmCapNhatDocGia f = new frmCapNhatDocGia();
             this.Hide();
             f.ShowDialog();
             this.Show();
+
         }
 
-        private void tsCapnhatnhanvien_Click(object sender, EventArgs e)
+        private void btnCapNhatNhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmCapNhatNhanVien f = new frmCapNhatNhanVien();
             this.Hide();
             f.ShowDialog();
             this.Show();
+
+
         }
 
-        private void tsCapnhatsach_Click(object sender, EventArgs e)
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnDoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDoiMatKhau f = new frmDoiMatKhau();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnCapNhatSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCapNhatSach f = new frmCapNhatSach();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnCapNhatTheLoai_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCapNhatTL f = new frmCapNhatTL();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Close();
+
+        }
+
+        private void RbFTrangChu_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnTaoTaiKhoan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            frmTaoTaiKhoan f = new frmTaoTaiKhoan();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
-        private void ribbonControl1_Click(object sender, EventArgs e)
+        private void btnMuonSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLapPhieuMuon_Tra f = new frmLapPhieuMuon_Tra();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnTraCuuSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+
     }
 }

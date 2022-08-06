@@ -158,7 +158,6 @@ namespace DoAn_QLTV
             this.grbThongTinDG.TabIndex = 20;
             this.grbThongTinDG.TabStop = false;
             this.grbThongTinDG.Text = "Thông Tin Độc Giả";
-            this.grbThongTinDG.Enter += new System.EventHandler(this.grbThongTinDG_Enter);
             // 
             // cmbGioiTinhDG
             // 
@@ -182,7 +181,7 @@ namespace DoAn_QLTV
             this.dtpNgaySinhDG.Name = "dtpNgaySinhDG";
             this.dtpNgaySinhDG.Size = new System.Drawing.Size(100, 23);
             this.dtpNgaySinhDG.TabIndex = 4;
-            this.dtpNgaySinhDG.ValueChanged += new System.EventHandler(this.dtpNgaySinhDG_ValueChanged);
+           
             // 
             // txtSDTDG
             // 
@@ -227,7 +226,7 @@ namespace DoAn_QLTV
             this.lblGioiTinh.Size = new System.Drawing.Size(66, 16);
             this.lblGioiTinh.TabIndex = 4;
             this.lblGioiTinh.Text = "Giới tính:";
-            this.lblGioiTinh.Click += new System.EventHandler(this.lblGioiTinh_Click);
+
             // 
             // lblMaDG
             // 
@@ -238,7 +237,7 @@ namespace DoAn_QLTV
             this.lblMaDG.Size = new System.Drawing.Size(81, 16);
             this.lblMaDG.TabIndex = 3;
             this.lblMaDG.Text = "Mã độc giả:";
-            this.lblMaDG.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // lblNgaySinh
             // 
@@ -259,7 +258,7 @@ namespace DoAn_QLTV
             this.label4.Size = new System.Drawing.Size(76, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Điện thoại:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+
             // 
             // dgvThongTinDG
             // 
@@ -271,7 +270,6 @@ namespace DoAn_QLTV
             this.dgvThongTinDG.Size = new System.Drawing.Size(620, 314);
             this.dgvThongTinDG.TabIndex = 21;
             this.dgvThongTinDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinDG_CellContentClick);
-            this.dgvThongTinDG.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinDG_CellContentDoubleClick);
             // 
             // frmCapNhatDocGia
             // 

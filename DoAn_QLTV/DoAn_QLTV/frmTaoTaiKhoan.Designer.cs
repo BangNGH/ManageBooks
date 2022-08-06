@@ -162,6 +162,7 @@
             // 
             // cmbDG
             // 
+            this.cmbDG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDG.FormattingEnabled = true;
             this.cmbDG.Location = new System.Drawing.Point(117, 1);
             this.cmbDG.Name = "cmbDG";

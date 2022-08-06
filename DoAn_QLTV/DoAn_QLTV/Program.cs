@@ -13,7 +13,7 @@ namespace DoAn_QLTV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCapNhatNhanVien());
+            Application.Run(new frmLapPhieuMuon_Tra());
         }
     }
 }

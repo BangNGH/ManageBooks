@@ -55,17 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DOAnQLTVDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DOAnQLTVDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmBaoCaoThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBaoCaoThongKe.Designer.cs">
       <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCapNhatSach.cs">
+    <Compile Include="frmCapNhatSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCapNhatSach.Designer.cs">
-      <DependentUpon>FrmCapNhatSach.cs</DependentUpon>
+    <Compile Include="frmCapNhatSach.Designer.cs">
+      <DependentUpon>frmCapNhatSach.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCapNhatNhanVien.cs">
       <SubType>Form</SubType>
@@ -73,11 +78,11 @@
     <Compile Include="frmCapNhatNhanVien.Designer.cs">
       <DependentUpon>frmCapNhatNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCapNhatTL.cs">
+    <Compile Include="frmCapNhatTL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCapNhatTL.Designer.cs">
-      <DependentUpon>FrmCapNhatTL.cs</DependentUpon>
+    <Compile Include="frmCapNhatTL.Designer.cs">
+      <DependentUpon>frmCapNhatTL.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCTPM.cs">
       <SubType>Form</SubType>
@@ -133,25 +138,19 @@
     <Compile Include="frmTraCuuSach.Designer.cs">
       <DependentUpon>frmTraCuuSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTrangchu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTrangchu.Designer.cs">
-      <DependentUpon>frmTrangchu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RbFTrangChu.cs">
+    <Compile Include="frmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RbFTrangChu.Designer.cs">
-      <DependentUpon>RbFTrangChu.cs</DependentUpon>
+    <Compile Include="frmTrangChu.Designer.cs">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmBaoCaoThongKe.resx">
       <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCapNhatSach.resx">
-      <DependentUpon>FrmCapNhatSach.cs</DependentUpon>
+    <EmbeddedResource Include="frmCapNhatSach.resx">
+      <DependentUpon>frmCapNhatSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCapNhatDocGia.resx">
       <DependentUpon>frmCapNhatDocGia.cs</DependentUpon>
@@ -159,8 +158,8 @@
     <EmbeddedResource Include="frmCapNhatNhanVien.resx">
       <DependentUpon>frmCapNhatNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCapNhatTL.resx">
-      <DependentUpon>FrmCapNhatTL.cs</DependentUpon>
+    <EmbeddedResource Include="frmCapNhatTL.resx">
+      <DependentUpon>frmCapNhatTL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCTPM.resx">
       <DependentUpon>frmCTPM.cs</DependentUpon>
@@ -180,9 +179,6 @@
     <EmbeddedResource Include="frmTaoTaiKhoan.resx">
       <DependentUpon>frmTaoTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTrangchu.resx">
-      <DependentUpon>frmTrangchu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -194,9 +190,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RbFTrangChu.resx">
-      <DependentUpon>RbFTrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="frmTrangChu.resx">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DOAnQLTVDataSet1.xsc">
+      <DependentUpon>DOAnQLTVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DOAnQLTVDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DOAnQLTVDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DOAnQLTVDataSet1.xss">
+      <DependentUpon>DOAnQLTVDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

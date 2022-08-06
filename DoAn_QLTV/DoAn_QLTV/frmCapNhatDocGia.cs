@@ -40,6 +40,7 @@ namespace DoAn_QLTV
             btnThemDG.Enabled = true;
             btnXoaDG.Enabled = true;
             btnSuaDG.Enabled = true;
+
             txtMaDG.Text = "";
             txtSDTDG.Text = "";
             txtTenDG.Text = "";
@@ -51,51 +52,14 @@ namespace DoAn_QLTV
 
 
         }
-
-        private void mượntrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblGioiTinh_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grbThongTinDG_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSuaDG_Click(object sender, EventArgs e)
@@ -168,11 +132,6 @@ namespace DoAn_QLTV
             txtMaDG.Focus();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnLuuDG_Click(object sender, EventArgs e)
         {
             if (txtMaDG.Enabled == true)
@@ -186,7 +145,6 @@ namespace DoAn_QLTV
                 {
                     try
                     {
-                        txtMaDG.Enabled = true;
                         command = connection.CreateCommand();
                         command.CommandText = "insert into DOCGIA values('" + txtMaDG.Text + "',N'" + txtTenDG.Text + "','" + dtpNgaySinhDG.Text + "',N'" + cmbGioiTinhDG.Text + "', '" + txtSDTDG.Text + "')";
                         command.ExecuteNonQuery();
@@ -212,7 +170,6 @@ namespace DoAn_QLTV
                 }
                 try
                 {
-                    txtMaDG.Enabled = false;
                     command = connection.CreateCommand();
                     command.CommandText = "update DOCGIA set TenDG = N'" + txtTenDG.Text + "', NgaySinhDG='" + dtpNgaySinhDG.Text + "',GioiTinh = N'" + cmbGioiTinhDG.Text + "',SDTDG = '" + txtSDTDG.Text + "' where MaDG = '" + txtMaDG.Text + "'";
                     command.ExecuteNonQuery();
@@ -243,25 +200,10 @@ namespace DoAn_QLTV
         }
 
 
-
-        private void dgvThongTinDG_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnKhongLuuDG_Click(object sender, EventArgs e)
         {
             frmCapNhatDocGia_Load(sender, e);
         }
 
-        private void dtpNgaySinhDG_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -54,7 +54,7 @@ namespace DoAn_QLTV
                 }
                 else
                 {
-                    RbFTrangChu f = new RbFTrangChu();
+                    frmTrangChu f = new frmTrangChu();
                     this.Hide();
                     f.ShowDialog();
                     txtMatKhau.Text = "";
