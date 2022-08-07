@@ -59,6 +59,8 @@
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTimeEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit();
+            this.btnCapNhatNCC = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPhieuNhap = new DevExpress.XtraBars.BarButtonItem();
             this.rbpHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -68,9 +70,11 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.groupCapNhatTheLoai = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpMuon_Tra = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpTraCuu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -84,6 +88,8 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.RbfrmTrangChu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
             this.SuspendLayout();
@@ -122,9 +128,12 @@
             this.btnThongKeDG,
             this.btnTimKiemDG,
             this.barButtonItem6,
-            this.barEditItem1});
+            this.barEditItem1,
+            this.btnCapNhatNCC,
+            this.btnPhieuNhap,
+            this.barButtonItem7});
             this.RbfrmTrangChu.Location = new System.Drawing.Point(0, 0);
-            this.RbfrmTrangChu.MaxItemId = 33;
+            this.RbfrmTrangChu.MaxItemId = 36;
             this.RbfrmTrangChu.Name = "RbfrmTrangChu";
             this.RbfrmTrangChu.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbpHeThong,
@@ -349,6 +358,22 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemTimeEdit1.Name = "repositoryItemTimeEdit1";
             // 
+            // btnCapNhatNCC
+            // 
+            this.btnCapNhatNCC.Caption = "Cập Nhật Nhà Cung Cấp";
+            this.btnCapNhatNCC.Id = 33;
+            this.btnCapNhatNCC.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCapNhatNCC.ImageOptions.SvgImage")));
+            this.btnCapNhatNCC.Name = "btnCapNhatNCC";
+            this.btnCapNhatNCC.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCapNhatNCC_ItemClick);
+            // 
+            // btnPhieuNhap
+            // 
+            this.btnPhieuNhap.Caption = "Lập Phiếu Nhập Sách";
+            this.btnPhieuNhap.Id = 34;
+            this.btnPhieuNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPhieuNhap.ImageOptions.SvgImage")));
+            this.btnPhieuNhap.Name = "btnPhieuNhap";
+            this.btnPhieuNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhieuNhap_ItemClick);
+            // 
             // rbpHeThong
             // 
             this.rbpHeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -380,7 +405,8 @@
             this.ribbonPageGroup2,
             this.ribbonPageGroup1,
             this.groupCapNhatTheLoai,
-            this.ribbonPageGroup4});
+            this.ribbonPageGroup4,
+            this.ribbonPageGroup17});
             this.rbpDanhMuc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("rbpDanhMuc.ImageOptions.SvgImage")));
             this.rbpDanhMuc.Name = "rbpDanhMuc";
             this.rbpDanhMuc.Text = "Danh Mục";
@@ -405,11 +431,18 @@
             this.ribbonPageGroup4.ItemLinks.Add(this.btnCapNhatTheLoai);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.btnCapNhatNCC);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            // 
             // rbpMuon_Tra
             // 
             this.rbpMuon_Tra.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3,
-            this.ribbonPageGroup14});
+            this.ribbonPageGroup14,
+            this.ribbonPageGroup18,
+            this.ribbonPageGroup19});
             this.rbpMuon_Tra.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("rbpMuon_Tra.ImageOptions.SvgImage")));
             this.rbpMuon_Tra.Name = "rbpMuon_Tra";
             this.rbpMuon_Tra.Text = "Mượn-Trả Sách";
@@ -423,6 +456,11 @@
             // 
             this.ribbonPageGroup14.ItemLinks.Add(this.btnThongTinCTPM);
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            // 
+            // ribbonPageGroup18
+            // 
+            this.ribbonPageGroup18.ItemLinks.Add(this.btnPhieuNhap);
+            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
             // 
             // rbpTraCuu
             // 
@@ -509,6 +547,19 @@
             this.simpleButton1.TabIndex = 2;
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
             // 
+            // ribbonPageGroup19
+            // 
+            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup19.Name = "ribbonPageGroup19";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Cập Nhật Phiếu Nhập";
+            this.barButtonItem7.Id = 35;
+            this.barButtonItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
+            // 
             // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,5 +640,11 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraBars.BarButtonItem btnCapNhatNCC;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
+        private DevExpress.XtraBars.BarButtonItem btnPhieuNhap;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
     }
 }

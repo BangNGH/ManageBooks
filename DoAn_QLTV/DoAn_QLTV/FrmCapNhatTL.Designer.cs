@@ -54,12 +54,12 @@
             this.grbThongTinTL.Controls.Add(this.lblTenTL);
             this.grbThongTinTL.Controls.Add(this.lblMaTL);
             this.grbThongTinTL.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
-            this.grbThongTinTL.Location = new System.Drawing.Point(15, 5);
+            this.grbThongTinTL.Location = new System.Drawing.Point(12, 12);
             this.grbThongTinTL.Name = "grbThongTinTL";
             this.grbThongTinTL.Size = new System.Drawing.Size(213, 98);
             this.grbThongTinTL.TabIndex = 21;
             this.grbThongTinTL.TabStop = false;
-            this.grbThongTinTL.Text = "Thông Tin Thể Loại";
+            this.grbThongTinTL.Text = "Thông tin thể loại";
             // 
             // txtMaTL
             // 
@@ -107,7 +107,7 @@
             this.pnlChucNangSach.Controls.Add(this.btnXoaTL);
             this.pnlChucNangSach.Controls.Add(this.btnSuaTL);
             this.pnlChucNangSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlChucNangSach.Location = new System.Drawing.Point(6, 126);
+            this.pnlChucNangSach.Location = new System.Drawing.Point(3, 133);
             this.pnlChucNangSach.Name = "pnlChucNangSach";
             this.pnlChucNangSach.Size = new System.Drawing.Size(301, 82);
             this.pnlChucNangSach.TabIndex = 19;
@@ -177,7 +177,7 @@
             // 
             this.dgvThongTinTL.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvThongTinTL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThongTinTL.Location = new System.Drawing.Point(313, 12);
+            this.dgvThongTinTL.Location = new System.Drawing.Point(310, 19);
             this.dgvThongTinTL.Name = "dgvThongTinTL";
             this.dgvThongTinTL.RowHeadersWidth = 51;
             this.dgvThongTinTL.Size = new System.Drawing.Size(277, 196);

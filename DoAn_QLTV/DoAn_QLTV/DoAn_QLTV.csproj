@@ -60,6 +60,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DOAnQLTVDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmCapNhatNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatNCC.Designer.cs">
+      <DependentUpon>frmCapNhatNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCTPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTPN.Designer.cs">
+      <DependentUpon>frmCTPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhapSach.Designer.cs">
+      <DependentUpon>frmPhieuNhapSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThongTinHoTro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +176,15 @@
     <Compile Include="frmTrangChu.Designer.cs">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmCapNhatNCC.resx">
+      <DependentUpon>frmCapNhatNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCTPN.resx">
+      <DependentUpon>frmCTPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhapSach.resx">
+      <DependentUpon>frmPhieuNhapSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmThongTinHoTro.resx">
       <DependentUpon>frmThongTinHoTro.cs</DependentUpon>
     </EmbeddedResource>

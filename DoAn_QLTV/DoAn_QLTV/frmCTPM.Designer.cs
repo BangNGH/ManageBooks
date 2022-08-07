@@ -173,7 +173,7 @@
             this.grbThongTinPM.Size = new System.Drawing.Size(467, 157);
             this.grbThongTinPM.TabIndex = 29;
             this.grbThongTinPM.TabStop = false;
-            this.grbThongTinPM.Text = "Thông Tin Chi Tiết Phiếu Mượn";
+            this.grbThongTinPM.Text = "Thôngtin chi tiết phiếu mượn";
             // 
             // cmbTenSach
             // 
@@ -223,7 +223,7 @@
             this.lblMaCTPM.Name = "lblMaCTPM";
             this.lblMaCTPM.Size = new System.Drawing.Size(112, 16);
             this.lblMaCTPM.TabIndex = 23;
-            this.lblMaCTPM.Text = "Mã Phiếu Mượn:";
+            this.lblMaCTPM.Text = "Mã phiếu mượn:";
             // 
             // cmbTinhTrangSach
             // 
@@ -284,9 +284,9 @@
             this.lblTenDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenDG.Location = new System.Drawing.Point(25, 75);
             this.lblTenDG.Name = "lblTenDG";
-            this.lblTenDG.Size = new System.Drawing.Size(84, 16);
+            this.lblTenDG.Size = new System.Drawing.Size(85, 16);
             this.lblTenDG.TabIndex = 12;
-            this.lblTenDG.Text = "Ngày Mượn:";
+            this.lblTenDG.Text = "Ngày mượn:";
             // 
             // lblTenSach
             // 

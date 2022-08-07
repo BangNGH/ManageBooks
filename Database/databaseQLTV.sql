@@ -155,4 +155,4 @@ create table support
 )
 
 
-select mssv 'Mã số SV', hoTen 'Họ tên', gioiTinh 'Giới tính', SDT 'Điện thoại', email 'email' from support
+update CT_PHIEUNHAP set MaSach = 'MS02' ,SoLuongNhap = '20', DonGiaNhap ='500000' where MaPN = 'PN01  '

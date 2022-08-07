@@ -141,5 +141,29 @@ namespace DoAn_QLTV
         {
             Close();
         }
+
+        private void btnCapNhatNCC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCapNhatNCC f = new frmCapNhatNCC();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnPhieuNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmPhieuNhapSach f = new frmPhieuNhapSach();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCTPN f = new frmCTPN();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }
