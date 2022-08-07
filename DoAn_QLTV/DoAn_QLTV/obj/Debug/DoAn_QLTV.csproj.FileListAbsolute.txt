@@ -122,3 +122,7 @@ D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCTPM.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmDoiMatKhau.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmLapPhieuMuon_Tra.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmDangKyTk.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmTimKiemSach.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmTimKiemDG.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmTimKiemNV.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmThongTinHoTro.resources

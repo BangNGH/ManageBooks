@@ -193,6 +193,8 @@
             this.Controls.Add(this.dgvThongTinTL);
             this.Controls.Add(this.grbThongTinTL);
             this.Controls.Add(this.pnlChucNangSach);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCapNhatTL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Thể Loại";

@@ -12,7 +12,7 @@ namespace DoAn_QLTV
         string str = @"Data Source=NONAME\SQLEXPRESS;Initial Catalog=DOAnQLTV;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
-
+     
         void loadThongTinDG()
         {
             command = connection.CreateCommand();
@@ -25,7 +25,7 @@ namespace DoAn_QLTV
         public frmCapNhatDocGia()
         {
             InitializeComponent();
-
+            
         }
 
         private void frmCapNhatDocGia_Load(object sender, EventArgs e)
@@ -101,7 +101,7 @@ namespace DoAn_QLTV
                 txtTenDG.Text = "";
                 cmbGioiTinhDG.Text = "";
             }
-            catch (Exception loi)
+            catch
             {
                 MessageBox.Show("Không thể xóa vì có quan hệ với bảng khác ", "Thông Báo", MessageBoxButtons.OK);
                 txtMaDG.Text = "";

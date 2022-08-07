@@ -4,22 +4,14 @@ namespace DoAn_QLTV
 {
     public partial class frmTrangChu : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+
         public frmTrangChu()
         {
             InitializeComponent();
+            MaximizeBox = false;
+            MinimizeBox = false;
         }
 
-
-
-        private void RbfrmTrangChu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
 
         private void btnCapNhatDocGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -37,11 +29,6 @@ namespace DoAn_QLTV
             f.ShowDialog();
             this.Show();
 
-
-        }
-
-        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
 
         }
 
@@ -96,16 +83,63 @@ namespace DoAn_QLTV
             this.Show();
         }
 
-        private void btnTraCuuSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnTimKiemSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            frmTimKiemSach f = new frmTimKiemSach();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
-        private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
+        private void btnThongTinCTPM_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            frmCTPM f = new frmCTPM();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
 
+        private void btnTimKiemSach_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTimKiemSach f = new frmTimKiemSach();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnTimKiemNV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTimKiemNV f = new frmTimKiemNV();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnHoTro_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThongTinHoTro f = new frmThongTinHoTro();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnHuongDan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //Process.Start(@"");
+        }
+
+        private void btnTimKiemDG_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTimKiemDG f = new frmTimKiemDG();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void simpleButton1_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

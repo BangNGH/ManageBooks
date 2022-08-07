@@ -362,6 +362,8 @@
             this.Controls.Add(this.grbThongTinSach);
             this.Controls.Add(this.dgvThongTinSach);
             this.Controls.Add(this.pnlChucNangSach);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCapNhatSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Sách";

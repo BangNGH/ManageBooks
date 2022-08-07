@@ -285,7 +285,7 @@
             this.dgvThongTinNV.Location = new System.Drawing.Point(0, 256);
             this.dgvThongTinNV.Name = "dgvThongTinNV";
             this.dgvThongTinNV.RowHeadersWidth = 51;
-            this.dgvThongTinNV.Size = new System.Drawing.Size(620, 314);
+            this.dgvThongTinNV.Size = new System.Drawing.Size(620, 233);
             this.dgvThongTinNV.TabIndex = 21;
             this.dgvThongTinNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinNV_CellContentClick);
             // 
@@ -295,11 +295,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
-            this.ClientSize = new System.Drawing.Size(620, 574);
+            this.ClientSize = new System.Drawing.Size(620, 489);
             this.Controls.Add(this.dgvThongTinNV);
             this.Controls.Add(this.grbThongTinNV);
             this.Controls.Add(this.pnlChucNangNV);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCapNhatNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Nhân Viên";

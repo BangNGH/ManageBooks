@@ -40,8 +40,13 @@
             this.btnSuaPM = new System.Windows.Forms.Button();
             this.dgvThongTinCTPM = new System.Windows.Forms.DataGridView();
             this.grbThongTinPM = new System.Windows.Forms.GroupBox();
+            this.cmbTenSach = new System.Windows.Forms.ComboBox();
+            this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dOAnQLTVDataSet1 = new DoAn_QLTV.DOAnQLTVDataSet1();
+            this.cmbMaPM = new System.Windows.Forms.ComboBox();
+            this.pHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblMaCTPM = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTinhTrangSach = new System.Windows.Forms.ComboBox();
             this.lblTinhTrangSach = new System.Windows.Forms.Label();
             this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayMuon = new System.Windows.Forms.DateTimePicker();
@@ -49,25 +54,20 @@
             this.lblTenDG = new System.Windows.Forms.Label();
             this.lblTenSach = new System.Windows.Forms.Label();
             this.pnlChucNangDG = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dOAnQLTVDataSet1 = new DoAn_QLTV.DOAnQLTVDataSet1();
-            this.pHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnThemCTPM = new System.Windows.Forms.Button();
+            this.btnKhongLuuCTPM = new System.Windows.Forms.Button();
+            this.btnThoatfrmCTPM = new System.Windows.Forms.Button();
+            this.btnLuuCTPM = new System.Windows.Forms.Button();
+            this.btnXoaCTPM = new System.Windows.Forms.Button();
+            this.btnSuaCTPM = new System.Windows.Forms.Button();
             this.pHIEUMUONTableAdapter = new DoAn_QLTV.DOAnQLTVDataSet1TableAdapters.PHIEUMUONTableAdapter();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sACHTableAdapter = new DoAn_QLTV.DOAnQLTVDataSet1TableAdapters.SACHTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinCTPM)).BeginInit();
             this.grbThongTinPM.SuspendLayout();
-            this.pnlChucNangDG.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOAnQLTVDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).BeginInit();
+            this.pnlChucNangDG.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtMaPM
@@ -152,14 +152,15 @@
             this.dgvThongTinCTPM.RowHeadersWidth = 51;
             this.dgvThongTinCTPM.Size = new System.Drawing.Size(626, 314);
             this.dgvThongTinCTPM.TabIndex = 30;
+            this.dgvThongTinCTPM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinCTPM_CellContentClick);
             // 
             // grbThongTinPM
             // 
             this.grbThongTinPM.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
-            this.grbThongTinPM.Controls.Add(this.comboBox3);
-            this.grbThongTinPM.Controls.Add(this.comboBox2);
+            this.grbThongTinPM.Controls.Add(this.cmbTenSach);
+            this.grbThongTinPM.Controls.Add(this.cmbMaPM);
             this.grbThongTinPM.Controls.Add(this.lblMaCTPM);
-            this.grbThongTinPM.Controls.Add(this.comboBox1);
+            this.grbThongTinPM.Controls.Add(this.cmbTinhTrangSach);
             this.grbThongTinPM.Controls.Add(this.lblTinhTrangSach);
             this.grbThongTinPM.Controls.Add(this.dtpNgayTra);
             this.grbThongTinPM.Controls.Add(this.dtpNgayMuon);
@@ -174,6 +175,46 @@
             this.grbThongTinPM.TabStop = false;
             this.grbThongTinPM.Text = "Thông Tin Chi Tiết Phiếu Mượn";
             // 
+            // cmbTenSach
+            // 
+            this.cmbTenSach.DataSource = this.sACHBindingSource;
+            this.cmbTenSach.DisplayMember = "TenSach";
+            this.cmbTenSach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTenSach.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.cmbTenSach.FormattingEnabled = true;
+            this.cmbTenSach.Location = new System.Drawing.Point(346, 33);
+            this.cmbTenSach.Name = "cmbTenSach";
+            this.cmbTenSach.Size = new System.Drawing.Size(116, 23);
+            this.cmbTenSach.TabIndex = 4;
+            this.cmbTenSach.ValueMember = "MaSach";
+            // 
+            // sACHBindingSource
+            // 
+            this.sACHBindingSource.DataMember = "SACH";
+            this.sACHBindingSource.DataSource = this.dOAnQLTVDataSet1;
+            // 
+            // dOAnQLTVDataSet1
+            // 
+            this.dOAnQLTVDataSet1.DataSetName = "DOAnQLTVDataSet1";
+            this.dOAnQLTVDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cmbMaPM
+            // 
+            this.cmbMaPM.DataSource = this.pHIEUMUONBindingSource;
+            this.cmbMaPM.DisplayMember = "MaPM";
+            this.cmbMaPM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMaPM.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.cmbMaPM.FormattingEnabled = true;
+            this.cmbMaPM.Location = new System.Drawing.Point(123, 35);
+            this.cmbMaPM.Name = "cmbMaPM";
+            this.cmbMaPM.Size = new System.Drawing.Size(101, 23);
+            this.cmbMaPM.TabIndex = 1;
+            // 
+            // pHIEUMUONBindingSource
+            // 
+            this.pHIEUMUONBindingSource.DataMember = "PHIEUMUON";
+            this.pHIEUMUONBindingSource.DataSource = this.dOAnQLTVDataSet1;
+            // 
             // lblMaCTPM
             // 
             this.lblMaCTPM.AutoSize = true;
@@ -184,18 +225,18 @@
             this.lblMaCTPM.TabIndex = 23;
             this.lblMaCTPM.Text = "Mã Phiếu Mượn:";
             // 
-            // comboBox1
+            // cmbTinhTrangSach
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbTinhTrangSach.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.cmbTinhTrangSach.FormattingEnabled = true;
+            this.cmbTinhTrangSach.Items.AddRange(new object[] {
             "Hư hỏng",
             "Mất",
             "Nguyên vẹn"});
-            this.comboBox1.Location = new System.Drawing.Point(123, 114);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(101, 23);
-            this.comboBox1.TabIndex = 21;
+            this.cmbTinhTrangSach.Location = new System.Drawing.Point(123, 114);
+            this.cmbTinhTrangSach.Name = "cmbTinhTrangSach";
+            this.cmbTinhTrangSach.Size = new System.Drawing.Size(101, 23);
+            this.cmbTinhTrangSach.TabIndex = 3;
             // 
             // lblTinhTrangSach
             // 
@@ -209,21 +250,23 @@
             // 
             // dtpNgayTra
             // 
+            this.dtpNgayTra.CustomFormat = "MM/dd/yyyy";
             this.dtpNgayTra.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayTra.Location = new System.Drawing.Point(361, 75);
+            this.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayTra.Location = new System.Drawing.Point(346, 75);
             this.dtpNgayTra.Name = "dtpNgayTra";
-            this.dtpNgayTra.Size = new System.Drawing.Size(101, 21);
-            this.dtpNgayTra.TabIndex = 18;
+            this.dtpNgayTra.Size = new System.Drawing.Size(116, 21);
+            this.dtpNgayTra.TabIndex = 5;
             // 
             // dtpNgayMuon
             // 
+            this.dtpNgayMuon.CustomFormat = "MM/dd/yyyy";
             this.dtpNgayMuon.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayMuon.Location = new System.Drawing.Point(123, 71);
             this.dtpNgayMuon.Name = "dtpNgayMuon";
             this.dtpNgayMuon.Size = new System.Drawing.Size(101, 21);
-            this.dtpNgayMuon.TabIndex = 17;
+            this.dtpNgayMuon.TabIndex = 2;
             // 
             // label1
             // 
@@ -258,114 +301,82 @@
             // pnlChucNangDG
             // 
             this.pnlChucNangDG.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
-            this.pnlChucNangDG.Controls.Add(this.button1);
-            this.pnlChucNangDG.Controls.Add(this.button2);
-            this.pnlChucNangDG.Controls.Add(this.button3);
-            this.pnlChucNangDG.Controls.Add(this.button4);
-            this.pnlChucNangDG.Controls.Add(this.button5);
-            this.pnlChucNangDG.Controls.Add(this.button6);
+            this.pnlChucNangDG.Controls.Add(this.btnThemCTPM);
+            this.pnlChucNangDG.Controls.Add(this.btnKhongLuuCTPM);
+            this.pnlChucNangDG.Controls.Add(this.btnThoatfrmCTPM);
+            this.pnlChucNangDG.Controls.Add(this.btnLuuCTPM);
+            this.pnlChucNangDG.Controls.Add(this.btnXoaCTPM);
+            this.pnlChucNangDG.Controls.Add(this.btnSuaCTPM);
             this.pnlChucNangDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlChucNangDG.Location = new System.Drawing.Point(29, 175);
             this.pnlChucNangDG.Name = "pnlChucNangDG";
-            this.pnlChucNangDG.Size = new System.Drawing.Size(566, 26);
+            this.pnlChucNangDG.Size = new System.Drawing.Size(581, 26);
             this.pnlChucNangDG.TabIndex = 31;
             // 
-            // button1
+            // btnThemCTPM
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 24);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnThemCTPM.Location = new System.Drawing.Point(0, 0);
+            this.btnThemCTPM.Name = "btnThemCTPM";
+            this.btnThemCTPM.Size = new System.Drawing.Size(75, 26);
+            this.btnThemCTPM.TabIndex = 13;
+            this.btnThemCTPM.Text = "Thêm";
+            this.btnThemCTPM.UseVisualStyleBackColor = true;
+            this.btnThemCTPM.Click += new System.EventHandler(this.btnThemCTPM_Click);
             // 
-            // button2
+            // btnKhongLuuCTPM
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(386, -1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 24);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Không Lưu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnKhongLuuCTPM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnKhongLuuCTPM.Location = new System.Drawing.Point(386, -1);
+            this.btnKhongLuuCTPM.Name = "btnKhongLuuCTPM";
+            this.btnKhongLuuCTPM.Size = new System.Drawing.Size(99, 27);
+            this.btnKhongLuuCTPM.TabIndex = 18;
+            this.btnKhongLuuCTPM.Text = "Không Lưu";
+            this.btnKhongLuuCTPM.UseVisualStyleBackColor = true;
+            this.btnKhongLuuCTPM.Click += new System.EventHandler(this.btnKhongLuuCTPM_Click);
             // 
-            // button3
+            // btnThoatfrmCTPM
             // 
-            this.button3.Location = new System.Drawing.Point(491, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 25);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnThoatfrmCTPM.Location = new System.Drawing.Point(503, 0);
+            this.btnThoatfrmCTPM.Name = "btnThoatfrmCTPM";
+            this.btnThoatfrmCTPM.Size = new System.Drawing.Size(75, 25);
+            this.btnThoatfrmCTPM.TabIndex = 14;
+            this.btnThoatfrmCTPM.Text = "Thoát";
+            this.btnThoatfrmCTPM.UseVisualStyleBackColor = true;
+            this.btnThoatfrmCTPM.Click += new System.EventHandler(this.btnThoatfrmCTPM_Click);
             // 
-            // button4
+            // btnLuuCTPM
             // 
-            this.button4.Location = new System.Drawing.Point(288, -1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 24);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Lưu";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLuuCTPM.Location = new System.Drawing.Point(288, -1);
+            this.btnLuuCTPM.Name = "btnLuuCTPM";
+            this.btnLuuCTPM.Size = new System.Drawing.Size(75, 27);
+            this.btnLuuCTPM.TabIndex = 17;
+            this.btnLuuCTPM.Text = "Lưu";
+            this.btnLuuCTPM.UseVisualStyleBackColor = true;
+            this.btnLuuCTPM.Click += new System.EventHandler(this.btnLuuCTPM_Click);
             // 
-            // button5
+            // btnXoaCTPM
             // 
-            this.button5.Location = new System.Drawing.Point(99, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 24);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Xóa";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnXoaCTPM.Location = new System.Drawing.Point(99, 0);
+            this.btnXoaCTPM.Name = "btnXoaCTPM";
+            this.btnXoaCTPM.Size = new System.Drawing.Size(75, 26);
+            this.btnXoaCTPM.TabIndex = 15;
+            this.btnXoaCTPM.Text = "Xóa";
+            this.btnXoaCTPM.UseVisualStyleBackColor = true;
+            this.btnXoaCTPM.Click += new System.EventHandler(this.btnXoaCTPM_Click);
             // 
-            // button6
+            // btnSuaCTPM
             // 
-            this.button6.Location = new System.Drawing.Point(195, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Sửa";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.pHIEUMUONBindingSource;
-            this.comboBox2.DisplayMember = "MaPM";
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(123, 35);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(101, 23);
-            this.comboBox2.TabIndex = 24;
-            // 
-            // dOAnQLTVDataSet1
-            // 
-            this.dOAnQLTVDataSet1.DataSetName = "DOAnQLTVDataSet1";
-            this.dOAnQLTVDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pHIEUMUONBindingSource
-            // 
-            this.pHIEUMUONBindingSource.DataMember = "PHIEUMUON";
-            this.pHIEUMUONBindingSource.DataSource = this.dOAnQLTVDataSet1;
+            this.btnSuaCTPM.Location = new System.Drawing.Point(195, 0);
+            this.btnSuaCTPM.Name = "btnSuaCTPM";
+            this.btnSuaCTPM.Size = new System.Drawing.Size(75, 26);
+            this.btnSuaCTPM.TabIndex = 16;
+            this.btnSuaCTPM.Text = "Sửa";
+            this.btnSuaCTPM.UseVisualStyleBackColor = true;
+            this.btnSuaCTPM.Click += new System.EventHandler(this.btnSuaCTPM_Click);
             // 
             // pHIEUMUONTableAdapter
             // 
             this.pHIEUMUONTableAdapter.ClearBeforeFill = true;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DataSource = this.sACHBindingSource;
-            this.comboBox3.DisplayMember = "TenSach";
-            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(361, 28);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(101, 23);
-            this.comboBox3.TabIndex = 25;
-            this.comboBox3.ValueMember = "MaSach";
-            // 
-            // sACHBindingSource
-            // 
-            this.sACHBindingSource.DataMember = "SACH";
-            this.sACHBindingSource.DataSource = this.dOAnQLTVDataSet1;
             // 
             // sACHTableAdapter
             // 
@@ -381,15 +392,16 @@
             this.Controls.Add(this.dgvThongTinCTPM);
             this.Controls.Add(this.grbThongTinPM);
             this.Name = "frmCTPM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi Tiết Phiếu Mượn";
             this.Load += new System.EventHandler(this.frmCTPM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinCTPM)).EndInit();
             this.grbThongTinPM.ResumeLayout(false);
             this.grbThongTinPM.PerformLayout();
-            this.pnlChucNangDG.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOAnQLTVDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).EndInit();
+            this.pnlChucNangDG.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -406,7 +418,7 @@
         private System.Windows.Forms.DataGridView dgvThongTinCTPM;
         private System.Windows.Forms.GroupBox grbThongTinPM;
         private System.Windows.Forms.Label lblMaCTPM;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTinhTrangSach;
         private System.Windows.Forms.Label lblTinhTrangSach;
         private System.Windows.Forms.DateTimePicker dtpNgayTra;
         private System.Windows.Forms.DateTimePicker dtpNgayMuon;
@@ -414,17 +426,17 @@
         private System.Windows.Forms.Label lblTenDG;
         private System.Windows.Forms.Label lblTenSach;
         private System.Windows.Forms.Panel pnlChucNangDG;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button btnThemCTPM;
+        private System.Windows.Forms.Button btnKhongLuuCTPM;
+        private System.Windows.Forms.Button btnThoatfrmCTPM;
+        private System.Windows.Forms.Button btnLuuCTPM;
+        private System.Windows.Forms.Button btnXoaCTPM;
+        private System.Windows.Forms.Button btnSuaCTPM;
+        private System.Windows.Forms.ComboBox cmbMaPM;
         private DOAnQLTVDataSet1 dOAnQLTVDataSet1;
         private System.Windows.Forms.BindingSource pHIEUMUONBindingSource;
         private DOAnQLTVDataSet1TableAdapters.PHIEUMUONTableAdapter pHIEUMUONTableAdapter;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbTenSach;
         private System.Windows.Forms.BindingSource sACHBindingSource;
         private DOAnQLTVDataSet1TableAdapters.SACHTableAdapter sACHTableAdapter;
     }

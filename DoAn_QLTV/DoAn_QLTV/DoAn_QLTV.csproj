@@ -60,6 +60,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DOAnQLTVDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmThongTinHoTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongTinHoTro.Designer.cs">
+      <DependentUpon>frmThongTinHoTro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimKiemDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiemDG.Designer.cs">
+      <DependentUpon>frmTimKiemDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimKiemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiemSach.Designer.cs">
+      <DependentUpon>frmTimKiemSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBaoCaoThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,17 +144,11 @@
     <Compile Include="frmTaoTaiKhoan.Designer.cs">
       <DependentUpon>frmTaoTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTraCuuNhanVien.cs">
+    <Compile Include="frmTimKiemNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTraCuuNhanVien.Designer.cs">
-      <DependentUpon>frmTraCuuNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTraCuuSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTraCuuSach.Designer.cs">
-      <DependentUpon>frmTraCuuSach.cs</DependentUpon>
+    <Compile Include="frmTimKiemNV.Designer.cs">
+      <DependentUpon>frmTimKiemNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,6 +158,18 @@
     <Compile Include="frmTrangChu.Designer.cs">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmThongTinHoTro.resx">
+      <DependentUpon>frmThongTinHoTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemDG.resx">
+      <DependentUpon>frmTimKiemDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemNV.resx">
+      <DependentUpon>frmTimKiemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemSach.resx">
+      <DependentUpon>frmTimKiemSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBaoCaoThongKe.resx">
       <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>

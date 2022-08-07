@@ -258,6 +258,8 @@
             this.Controls.Add(this.dgvThongTinPM);
             this.Controls.Add(this.grbThongTinPM);
             this.Controls.Add(this.pnlChucNangDG);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmLapPhieuMuon_Tra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lập Phiếu Mượn Trả";

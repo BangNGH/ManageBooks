@@ -90,8 +90,8 @@ create table CT_PHIEUMUON
 (
 	MaPM char(10),
 	MaSach char(10),
-	NgayMuon datetime,
-	NgayTra datetime,
+	NgayMuon date,
+	NgayTra date,
 	TinhTrangSach nvarchar(50),
 	primary key(MaPM, MaSach),
 	foreign key (MaPM) references PHIEUMUON(MaPM),
@@ -125,6 +125,8 @@ create table Account
 	MaDG char(10),
 	foreign key (MaDG) references DOCGIA(MaDG),
 )
+
+
 GO
 create trigger check_Account on Account 
 for insert as
@@ -142,3 +144,15 @@ BEGIN
 END
 	
 go
+
+create table support
+(
+	mssv char(10) primary key,
+	hoTen nvarchar(35),
+	gioiTinh char(3),
+	SDT char(10) unique,
+	email varchar(50) unique,
+)
+
+
+select mssv 'Mã số SV', hoTen 'Họ tên', gioiTinh 'Giới tính', SDT 'Điện thoại', email 'email' from support

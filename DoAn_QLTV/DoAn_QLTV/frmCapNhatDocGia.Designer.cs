@@ -181,7 +181,6 @@ namespace DoAn_QLTV
             this.dtpNgaySinhDG.Name = "dtpNgaySinhDG";
             this.dtpNgaySinhDG.Size = new System.Drawing.Size(100, 23);
             this.dtpNgaySinhDG.TabIndex = 4;
-           
             // 
             // txtSDTDG
             // 
@@ -226,7 +225,6 @@ namespace DoAn_QLTV
             this.lblGioiTinh.Size = new System.Drawing.Size(66, 16);
             this.lblGioiTinh.TabIndex = 4;
             this.lblGioiTinh.Text = "Giới tính:";
-
             // 
             // lblMaDG
             // 
@@ -237,7 +235,6 @@ namespace DoAn_QLTV
             this.lblMaDG.Size = new System.Drawing.Size(81, 16);
             this.lblMaDG.TabIndex = 3;
             this.lblMaDG.Text = "Mã độc giả:";
-
             // 
             // lblNgaySinh
             // 
@@ -258,7 +255,6 @@ namespace DoAn_QLTV
             this.label4.Size = new System.Drawing.Size(76, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Điện thoại:";
-
             // 
             // dgvThongTinDG
             // 
@@ -282,6 +278,8 @@ namespace DoAn_QLTV
             this.Controls.Add(this.grbThongTinDG);
             this.Controls.Add(this.pnlChucNangDG);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCapNhatDocGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Độc Giả";

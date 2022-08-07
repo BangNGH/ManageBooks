@@ -219,6 +219,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.panel3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmDoiMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đổi Mật Khẩu";

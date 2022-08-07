@@ -92,7 +92,7 @@ namespace DoAn_QLTV
                 txtTenTL.Text = "";
                 txtMaTL.Text = "";
             }
-            catch (Exception loi)
+            catch
             {
                 MessageBox.Show("Không thể xóa vì có quan hệ với bảng khác ", "Thông Báo", MessageBoxButtons.OK);
                 txtTenTL.Text = "";

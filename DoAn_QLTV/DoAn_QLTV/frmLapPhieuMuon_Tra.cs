@@ -61,7 +61,7 @@ namespace DoAn_QLTV
             {
                 if (txtMaPM.Text == "")
                 {
-                    MessageBox.Show("Hãy Click vào sách muốn sửa!", "Thông báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Hãy Click vào phiếu mượn muốn sửa!", "Thông báo", MessageBoxButtons.OK);
                     return;
                 }
                 try
@@ -86,9 +86,6 @@ namespace DoAn_QLTV
             this.Hide();
             f.ShowDialog();
             this.Show();
-
-
-
             frmLapPhieuMuon_Tra_Load(sender, e);
         }
 
@@ -168,7 +165,7 @@ namespace DoAn_QLTV
                 cmbMaDG.Text = "";
                 cmbMaNV.Text = "";
             }
-            catch (Exception loi)
+            catch
             {
                 MessageBox.Show("Không thể xóa vì có quan hệ với bảng khác ", "Thông Báo", MessageBoxButtons.OK);
                 txtMaPM.Text = "";
