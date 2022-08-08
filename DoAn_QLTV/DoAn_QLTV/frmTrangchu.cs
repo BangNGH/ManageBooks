@@ -165,5 +165,13 @@ namespace DoAn_QLTV
             f.ShowDialog();
             this.Show();
         }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLapPhieuPhat f = new frmLapPhieuPhat();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }

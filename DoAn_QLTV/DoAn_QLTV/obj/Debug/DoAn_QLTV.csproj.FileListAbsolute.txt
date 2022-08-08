@@ -129,3 +129,4 @@ D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmThongTinHoTro.r
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCapNhatNCC.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmPhieuNhapSach.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCTPN.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmLapPhieuPhat.resources

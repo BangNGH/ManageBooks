@@ -173,7 +173,7 @@
             this.grbThongTinPM.Size = new System.Drawing.Size(467, 157);
             this.grbThongTinPM.TabIndex = 29;
             this.grbThongTinPM.TabStop = false;
-            this.grbThongTinPM.Text = "Thôngtin chi tiết phiếu mượn";
+            this.grbThongTinPM.Text = "Thông tin chi tiết phiếu mượn";
             // 
             // cmbTenSach
             // 

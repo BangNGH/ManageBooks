@@ -38,35 +38,35 @@
             this.btnXoaCTPN = new System.Windows.Forms.Button();
             this.btnSuaCTPN = new System.Windows.Forms.Button();
             this.grbThongTinPM = new System.Windows.Forms.GroupBox();
+            this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtSLNhap = new System.Windows.Forms.TextBox();
             this.lblDonGia = new System.Windows.Forms.Label();
             this.cmbMaPN = new System.Windows.Forms.ComboBox();
+            this.pHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dOAnQLTVDataSet1 = new DoAn_QLTV.DOAnQLTVDataSet1();
             this.lblMaCTPM = new System.Windows.Forms.Label();
             this.cmbMaSach = new System.Windows.Forms.ComboBox();
             this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dOAnQLTVDataSet1 = new DoAn_QLTV.DOAnQLTVDataSet1();
             this.lblSLNhap = new System.Windows.Forms.Label();
             this.lblTenSach = new System.Windows.Forms.Label();
             this.sACHTableAdapter = new DoAn_QLTV.DOAnQLTVDataSet1TableAdapters.SACHTableAdapter();
-            this.txtDonGia = new System.Windows.Forms.TextBox();
-            this.pHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pHIEUNHAPTableAdapter = new DoAn_QLTV.DOAnQLTVDataSet1TableAdapters.PHIEUNHAPTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinCTPN)).BeginInit();
             this.pnlChucNangDG.SuspendLayout();
             this.grbThongTinPM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOAnQLTVDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dOAnQLTVDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvThongTinCTPN
             // 
             this.dgvThongTinCTPN.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvThongTinCTPN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThongTinCTPN.Location = new System.Drawing.Point(0, 222);
+            this.dgvThongTinCTPN.Location = new System.Drawing.Point(65, 222);
             this.dgvThongTinCTPN.Name = "dgvThongTinCTPN";
             this.dgvThongTinCTPN.RowHeadersWidth = 51;
-            this.dgvThongTinCTPN.Size = new System.Drawing.Size(626, 314);
+            this.dgvThongTinCTPN.Size = new System.Drawing.Size(441, 314);
             this.dgvThongTinCTPN.TabIndex = 33;
             this.dgvThongTinCTPN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinCTPN_CellContentClick);
             // 
@@ -80,7 +80,7 @@
             this.pnlChucNangDG.Controls.Add(this.btnXoaCTPN);
             this.pnlChucNangDG.Controls.Add(this.btnSuaCTPN);
             this.pnlChucNangDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlChucNangDG.Location = new System.Drawing.Point(31, 175);
+            this.pnlChucNangDG.Location = new System.Drawing.Point(5, 175);
             this.pnlChucNangDG.Name = "pnlChucNangDG";
             this.pnlChucNangDG.Size = new System.Drawing.Size(581, 26);
             this.pnlChucNangDG.TabIndex = 34;
@@ -158,12 +158,20 @@
             this.grbThongTinPM.Controls.Add(this.lblSLNhap);
             this.grbThongTinPM.Controls.Add(this.lblTenSach);
             this.grbThongTinPM.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
-            this.grbThongTinPM.Location = new System.Drawing.Point(71, 12);
+            this.grbThongTinPM.Location = new System.Drawing.Point(45, 12);
             this.grbThongTinPM.Name = "grbThongTinPM";
             this.grbThongTinPM.Size = new System.Drawing.Size(467, 157);
             this.grbThongTinPM.TabIndex = 32;
             this.grbThongTinPM.TabStop = false;
             this.grbThongTinPM.Text = "Thông tin chi tiết phiếu nhập";
+            // 
+            // txtDonGia
+            // 
+            this.txtDonGia.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.txtDonGia.Location = new System.Drawing.Point(360, 78);
+            this.txtDonGia.Name = "txtDonGia";
+            this.txtDonGia.Size = new System.Drawing.Size(101, 21);
+            this.txtDonGia.TabIndex = 26;
             // 
             // txtSLNhap
             // 
@@ -195,6 +203,16 @@
             this.cmbMaPN.Size = new System.Drawing.Size(101, 23);
             this.cmbMaPN.TabIndex = 1;
             // 
+            // pHIEUNHAPBindingSource
+            // 
+            this.pHIEUNHAPBindingSource.DataMember = "PHIEUNHAP";
+            this.pHIEUNHAPBindingSource.DataSource = this.dOAnQLTVDataSet1;
+            // 
+            // dOAnQLTVDataSet1
+            // 
+            this.dOAnQLTVDataSet1.DataSetName = "DOAnQLTVDataSet1";
+            this.dOAnQLTVDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // lblMaCTPM
             // 
             this.lblMaCTPM.AutoSize = true;
@@ -223,11 +241,6 @@
             this.sACHBindingSource.DataMember = "SACH";
             this.sACHBindingSource.DataSource = this.dOAnQLTVDataSet1;
             // 
-            // dOAnQLTVDataSet1
-            // 
-            this.dOAnQLTVDataSet1.DataSetName = "DOAnQLTVDataSet1";
-            this.dOAnQLTVDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // lblSLNhap
             // 
             this.lblSLNhap.AutoSize = true;
@@ -252,19 +265,6 @@
             // 
             this.sACHTableAdapter.ClearBeforeFill = true;
             // 
-            // txtDonGia
-            // 
-            this.txtDonGia.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.txtDonGia.Location = new System.Drawing.Point(360, 78);
-            this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(101, 21);
-            this.txtDonGia.TabIndex = 26;
-            // 
-            // pHIEUNHAPBindingSource
-            // 
-            this.pHIEUNHAPBindingSource.DataMember = "PHIEUNHAP";
-            this.pHIEUNHAPBindingSource.DataSource = this.dOAnQLTVDataSet1;
-            // 
             // pHIEUNHAPTableAdapter
             // 
             this.pHIEUNHAPTableAdapter.ClearBeforeFill = true;
@@ -273,7 +273,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 536);
+            this.ClientSize = new System.Drawing.Size(583, 536);
             this.Controls.Add(this.pnlChucNangDG);
             this.Controls.Add(this.dgvThongTinCTPN);
             this.Controls.Add(this.grbThongTinPM);
@@ -287,9 +287,9 @@
             this.pnlChucNangDG.ResumeLayout(false);
             this.grbThongTinPM.ResumeLayout(false);
             this.grbThongTinPM.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOAnQLTVDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dOAnQLTVDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

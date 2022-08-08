@@ -72,6 +72,12 @@
     <Compile Include="frmCTPN.Designer.cs">
       <DependentUpon>frmCTPN.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLapPhieuPhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLapPhieuPhat.Designer.cs">
+      <DependentUpon>frmLapPhieuPhat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhieuNhapSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCTPN.resx">
       <DependentUpon>frmCTPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLapPhieuPhat.resx">
+      <DependentUpon>frmLapPhieuPhat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuNhapSach.resx">
       <DependentUpon>frmPhieuNhapSach.cs</DependentUpon>
