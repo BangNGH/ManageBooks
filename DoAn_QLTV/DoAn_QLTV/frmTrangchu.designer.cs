@@ -62,6 +62,7 @@
             this.btnCapNhatNCC = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhieuNhap = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.rbpHeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -89,9 +90,7 @@
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.RbfrmTrangChu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
             this.SuspendLayout();
@@ -134,9 +133,10 @@
             this.btnCapNhatNCC,
             this.btnPhieuNhap,
             this.barButtonItem7,
-            this.barButtonItem8});
+            this.barButtonItem8,
+            this.barButtonItem9});
             this.RbfrmTrangChu.Location = new System.Drawing.Point(0, 0);
-            this.RbfrmTrangChu.MaxItemId = 37;
+            this.RbfrmTrangChu.MaxItemId = 39;
             this.RbfrmTrangChu.Name = "RbfrmTrangChu";
             this.RbfrmTrangChu.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbpHeThong,
@@ -385,6 +385,11 @@
             this.barButtonItem7.Name = "barButtonItem7";
             this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Id = 37;
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
             // rbpHeThong
             // 
             this.rbpHeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -453,8 +458,7 @@
             this.ribbonPageGroup3,
             this.ribbonPageGroup14,
             this.ribbonPageGroup18,
-            this.ribbonPageGroup19,
-            this.ribbonPageGroup20});
+            this.ribbonPageGroup19});
             this.rbpMuon_Tra.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("rbpMuon_Tra.ImageOptions.SvgImage")));
             this.rbpMuon_Tra.Name = "rbpMuon_Tra";
             this.rbpMuon_Tra.Text = "Mượn-Trả Sách";
@@ -550,41 +554,27 @@
             // 
             // ribbonStatusBar
             // 
+            this.ribbonStatusBar.ItemLinks.Add(this.barButtonItem9);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 599);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.RbfrmTrangChu;
             this.ribbonStatusBar.Size = new System.Drawing.Size(824, 24);
             // 
-            // simpleButton1
+            // barButtonItem9
             // 
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(787, 560);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(37, 33);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
-            // 
-            // ribbonPageGroup20
-            // 
-            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
-            // 
-            // barButtonItem8
-            // 
-            this.barButtonItem8.Caption = "Lập Phiếu Phạt";
-            this.barButtonItem8.Id = 36;
-            this.barButtonItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
-            this.barButtonItem8.Name = "barButtonItem8";
-            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
+            this.barButtonItem9.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barButtonItem9.Id = 38;
+            this.barButtonItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
             // frmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
             this.BackgroundImageStore = global::DoAn_QLTV.Properties.Resources._12;
             this.ClientSize = new System.Drawing.Size(824, 623);
-            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.RbfrmTrangChu);
             this.Name = "frmTrangChu";
@@ -592,7 +582,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Trang Chủ";
-            this.Load += new System.EventHandler(this.RbFTrangChu_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTrangChu_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.RbfrmTrangChu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).EndInit();
             this.ResumeLayout(false);
@@ -656,7 +646,6 @@
         private DevExpress.XtraBars.BarEditItem barEditItem1;
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraBars.BarButtonItem btnCapNhatNCC;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
         private DevExpress.XtraBars.BarButtonItem btnPhieuNhap;
@@ -664,6 +653,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
     }
 }

@@ -170,7 +170,7 @@ namespace DoAn_QLTV
             this.cmbGioiTinhDG.Location = new System.Drawing.Point(108, 119);
             this.cmbGioiTinhDG.Name = "cmbGioiTinhDG";
             this.cmbGioiTinhDG.Size = new System.Drawing.Size(100, 23);
-            this.cmbGioiTinhDG.TabIndex = 3;
+            this.cmbGioiTinhDG.TabIndex = 5;
             // 
             // dtpNgaySinhDG
             // 
@@ -180,7 +180,7 @@ namespace DoAn_QLTV
             this.dtpNgaySinhDG.Location = new System.Drawing.Point(360, 27);
             this.dtpNgaySinhDG.Name = "dtpNgaySinhDG";
             this.dtpNgaySinhDG.Size = new System.Drawing.Size(100, 23);
-            this.dtpNgaySinhDG.TabIndex = 4;
+            this.dtpNgaySinhDG.TabIndex = 2;
             // 
             // txtSDTDG
             // 
@@ -188,7 +188,7 @@ namespace DoAn_QLTV
             this.txtSDTDG.Location = new System.Drawing.Point(360, 71);
             this.txtSDTDG.Name = "txtSDTDG";
             this.txtSDTDG.Size = new System.Drawing.Size(100, 21);
-            this.txtSDTDG.TabIndex = 5;
+            this.txtSDTDG.TabIndex = 4;
             // 
             // txtTenDG
             // 
@@ -196,7 +196,7 @@ namespace DoAn_QLTV
             this.txtTenDG.Location = new System.Drawing.Point(108, 72);
             this.txtTenDG.Name = "txtTenDG";
             this.txtTenDG.Size = new System.Drawing.Size(100, 21);
-            this.txtTenDG.TabIndex = 2;
+            this.txtTenDG.TabIndex = 3;
             // 
             // txtMaDG
             // 
@@ -269,10 +269,12 @@ namespace DoAn_QLTV
             // 
             // frmCapNhatDocGia
             // 
+            this.AcceptButton = this.btnLuuDG;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
+            this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(620, 574);
             this.Controls.Add(this.dgvThongTinDG);
             this.Controls.Add(this.grbThongTinDG);
@@ -283,6 +285,7 @@ namespace DoAn_QLTV
             this.Name = "frmCapNhatDocGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Độc Giả";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCapNhatDocGia_FormClosing);
             this.Load += new System.EventHandler(this.frmCapNhatDocGia_Load);
             this.pnlChucNangDG.ResumeLayout(false);
             this.grbThongTinDG.ResumeLayout(false);

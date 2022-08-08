@@ -74,6 +74,7 @@
             // 
             // btnThoatfrmNV
             // 
+            this.btnThoatfrmNV.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmNV.Location = new System.Drawing.Point(507, 1);
             this.btnThoatfrmNV.Name = "btnThoatfrmNV";
             this.btnThoatfrmNV.Size = new System.Drawing.Size(75, 23);
@@ -192,7 +193,7 @@
             this.cmbGioiTinhNV.Location = new System.Drawing.Point(115, 119);
             this.cmbGioiTinhNV.Name = "cmbGioiTinhNV";
             this.cmbGioiTinhNV.Size = new System.Drawing.Size(100, 23);
-            this.cmbGioiTinhNV.TabIndex = 3;
+            this.cmbGioiTinhNV.TabIndex = 5;
             // 
             // dtpNgaySinhNV
             // 
@@ -202,7 +203,7 @@
             this.dtpNgaySinhNV.Location = new System.Drawing.Point(360, 27);
             this.dtpNgaySinhNV.Name = "dtpNgaySinhNV";
             this.dtpNgaySinhNV.Size = new System.Drawing.Size(100, 23);
-            this.dtpNgaySinhNV.TabIndex = 4;
+            this.dtpNgaySinhNV.TabIndex = 2;
             // 
             // txtSDTNV
             // 
@@ -210,7 +211,7 @@
             this.txtSDTNV.Location = new System.Drawing.Point(360, 71);
             this.txtSDTNV.Name = "txtSDTNV";
             this.txtSDTNV.Size = new System.Drawing.Size(100, 21);
-            this.txtSDTNV.TabIndex = 5;
+            this.txtSDTNV.TabIndex = 4;
             // 
             // txtTenNV
             // 
@@ -218,7 +219,7 @@
             this.txtTenNV.Location = new System.Drawing.Point(115, 72);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(100, 21);
-            this.txtTenNV.TabIndex = 2;
+            this.txtTenNV.TabIndex = 3;
             // 
             // txtMaNV
             // 
@@ -291,10 +292,12 @@
             // 
             // frmCapNhatNhanVien
             // 
+            this.AcceptButton = this.btnLuuNV;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
+            this.CancelButton = this.btnThoatfrmNV;
             this.ClientSize = new System.Drawing.Size(620, 489);
             this.Controls.Add(this.dgvThongTinNV);
             this.Controls.Add(this.grbThongTinNV);
@@ -305,6 +308,7 @@
             this.Name = "frmCapNhatNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Nhân Viên";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCapNhatNhanVien_FormClosing);
             this.Load += new System.EventHandler(this.frmCapNhatNhanVien_Load);
             this.pnlChucNangNV.ResumeLayout(false);
             this.grbThongTinNV.ResumeLayout(false);

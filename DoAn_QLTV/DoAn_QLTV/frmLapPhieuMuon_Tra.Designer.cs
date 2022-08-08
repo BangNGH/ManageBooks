@@ -140,9 +140,9 @@
             // txtMaPM
             // 
             this.txtMaPM.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPM.Location = new System.Drawing.Point(136, 30);
+            this.txtMaPM.Location = new System.Drawing.Point(126, 30);
             this.txtMaPM.Name = "txtMaPM";
-            this.txtMaPM.Size = new System.Drawing.Size(88, 21);
+            this.txtMaPM.Size = new System.Drawing.Size(125, 21);
             this.txtMaPM.TabIndex = 1;
             // 
             // lblMaDGPM
@@ -203,6 +203,7 @@
             // 
             // btnThoatfrmPM
             // 
+            this.btnThoatfrmPM.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmPM.Location = new System.Drawing.Point(208, 29);
             this.btnThoatfrmPM.Name = "btnThoatfrmPM";
             this.btnThoatfrmPM.Size = new System.Drawing.Size(75, 25);
@@ -251,9 +252,11 @@
             // 
             // frmLapPhieuMuon_Tra
             // 
+            this.AcceptButton = this.btnLuuPM;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.CancelButton = this.btnThoatfrmPM;
             this.ClientSize = new System.Drawing.Size(609, 224);
             this.Controls.Add(this.dgvThongTinPM);
             this.Controls.Add(this.grbThongTinPM);
@@ -263,6 +266,7 @@
             this.Name = "frmLapPhieuMuon_Tra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lập Phiếu Mượn Trả";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLapPhieuMuon_Tra_FormClosing);
             this.Load += new System.EventHandler(this.frmLapPhieuMuon_Tra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinPM)).EndInit();
             this.grbThongTinPM.ResumeLayout(false);

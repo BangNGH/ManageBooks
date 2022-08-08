@@ -185,7 +185,7 @@
             this.cmbTenSach.Location = new System.Drawing.Point(346, 33);
             this.cmbTenSach.Name = "cmbTenSach";
             this.cmbTenSach.Size = new System.Drawing.Size(116, 23);
-            this.cmbTenSach.TabIndex = 4;
+            this.cmbTenSach.TabIndex = 2;
             this.cmbTenSach.ValueMember = "MaSach";
             // 
             // sACHBindingSource
@@ -236,7 +236,7 @@
             this.cmbTinhTrangSach.Location = new System.Drawing.Point(123, 114);
             this.cmbTinhTrangSach.Name = "cmbTinhTrangSach";
             this.cmbTinhTrangSach.Size = new System.Drawing.Size(101, 23);
-            this.cmbTinhTrangSach.TabIndex = 3;
+            this.cmbTinhTrangSach.TabIndex = 5;
             // 
             // lblTinhTrangSach
             // 
@@ -256,7 +256,7 @@
             this.dtpNgayTra.Location = new System.Drawing.Point(346, 75);
             this.dtpNgayTra.Name = "dtpNgayTra";
             this.dtpNgayTra.Size = new System.Drawing.Size(116, 21);
-            this.dtpNgayTra.TabIndex = 5;
+            this.dtpNgayTra.TabIndex = 4;
             // 
             // dtpNgayMuon
             // 
@@ -266,7 +266,7 @@
             this.dtpNgayMuon.Location = new System.Drawing.Point(123, 71);
             this.dtpNgayMuon.Name = "dtpNgayMuon";
             this.dtpNgayMuon.Size = new System.Drawing.Size(101, 21);
-            this.dtpNgayMuon.TabIndex = 2;
+            this.dtpNgayMuon.TabIndex = 3;
             // 
             // label1
             // 
@@ -336,6 +336,7 @@
             // 
             // btnThoatfrmCTPM
             // 
+            this.btnThoatfrmCTPM.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmCTPM.Location = new System.Drawing.Point(503, 0);
             this.btnThoatfrmCTPM.Name = "btnThoatfrmCTPM";
             this.btnThoatfrmCTPM.Size = new System.Drawing.Size(75, 25);
@@ -384,9 +385,11 @@
             // 
             // frmCTPM
             // 
+            this.AcceptButton = this.btnLuuPM;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.CancelButton = this.btnThoatfrmCTPM;
             this.ClientSize = new System.Drawing.Size(622, 548);
             this.Controls.Add(this.pnlChucNangDG);
             this.Controls.Add(this.dgvThongTinCTPM);
@@ -394,6 +397,7 @@
             this.Name = "frmCTPM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi Tiết Phiếu Mượn";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCTPM_FormClosing);
             this.Load += new System.EventHandler(this.frmCTPM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinCTPM)).EndInit();
             this.grbThongTinPM.ResumeLayout(false);

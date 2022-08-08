@@ -53,7 +53,7 @@
             this.dgvThongTinNCC.Location = new System.Drawing.Point(320, -3);
             this.dgvThongTinNCC.Name = "dgvThongTinNCC";
             this.dgvThongTinNCC.RowHeadersWidth = 51;
-            this.dgvThongTinNCC.Size = new System.Drawing.Size(277, 235);
+            this.dgvThongTinNCC.Size = new System.Drawing.Size(267, 235);
             this.dgvThongTinNCC.TabIndex = 26;
             this.dgvThongTinNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinNCC_CellContentClick);
             // 
@@ -146,6 +146,7 @@
             // 
             // btnThoatfrmCapNhatNCC
             // 
+            this.btnThoatfrmCapNhatNCC.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmCapNhatNCC.Location = new System.Drawing.Point(220, 45);
             this.btnThoatfrmCapNhatNCC.Name = "btnThoatfrmCapNhatNCC";
             this.btnThoatfrmCapNhatNCC.Size = new System.Drawing.Size(75, 25);
@@ -186,15 +187,18 @@
             // 
             // frmCapNhatNCC
             // 
+            this.AcceptButton = this.btnLuuNCC;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 235);
+            this.CancelButton = this.btnThoatfrmCapNhatNCC;
+            this.ClientSize = new System.Drawing.Size(587, 235);
             this.Controls.Add(this.dgvThongTinNCC);
             this.Controls.Add(this.grbThongTinTL);
             this.Controls.Add(this.pnlChucNangSach);
             this.Name = "frmCapNhatNCC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCapNhatNCC";
+            this.Text = "Cập Nhật Nhà Cung Cấp";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCapNhatNCC_FormClosing);
             this.Load += new System.EventHandler(this.frmCapNhatNCC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinNCC)).EndInit();
             this.grbThongTinTL.ResumeLayout(false);

@@ -21,6 +21,7 @@ namespace DoAn_QLTV
             table.Clear();
             adapter.Fill(table);
             dgvThongTinPM.DataSource = table;
+            dgvThongTinPM.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmLapPhieuMuon_Tra()
         {
@@ -194,6 +195,12 @@ namespace DoAn_QLTV
         private void btnThoatfrmPM_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frmLapPhieuMuon_Tra_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận thoát ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

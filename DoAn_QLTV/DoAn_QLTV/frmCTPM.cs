@@ -21,6 +21,7 @@ namespace DoAn_QLTV
             table.Clear();
             adapter.Fill(table);
             dgvThongTinCTPM.DataSource = table;
+            dgvThongTinCTPM.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmCTPM()
         {
@@ -196,6 +197,12 @@ namespace DoAn_QLTV
         private void btnThoatfrmCTPM_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frmCTPM_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận thoát ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

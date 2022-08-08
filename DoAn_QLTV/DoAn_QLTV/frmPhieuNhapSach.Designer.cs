@@ -140,6 +140,7 @@
             // 
             this.txtMaPN.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaPN.Location = new System.Drawing.Point(126, 30);
+            this.txtMaPN.MaxLength = 24;
             this.txtMaPN.Name = "txtMaPN";
             this.txtMaPN.Size = new System.Drawing.Size(125, 21);
             this.txtMaPN.TabIndex = 1;
@@ -202,6 +203,7 @@
             // 
             // btnThoatfrmPN
             // 
+            this.btnThoatfrmPN.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmPN.Location = new System.Drawing.Point(208, 29);
             this.btnThoatfrmPN.Name = "btnThoatfrmPN";
             this.btnThoatfrmPN.Size = new System.Drawing.Size(75, 25);
@@ -250,8 +252,10 @@
             // 
             // frmPhieuNhapSach
             // 
+            this.AcceptButton = this.btnLuuPN;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnThoatfrmPN;
             this.ClientSize = new System.Drawing.Size(598, 230);
             this.Controls.Add(this.dgvThongTinPN);
             this.Controls.Add(this.grbThongTinPM);
@@ -259,6 +263,7 @@
             this.Name = "frmPhieuNhapSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiếu Nhập Sách";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPhieuNhapSach_FormClosing);
             this.Load += new System.EventHandler(this.frmPhieuNhapSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinPN)).EndInit();
             this.grbThongTinPM.ResumeLayout(false);

@@ -12,7 +12,7 @@ namespace DoAn_QLTV
         string str = @"Data Source=NONAME\SQLEXPRESS;Initial Catalog=DOAnQLTV;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
-     
+
         void loadThongTinDG()
         {
             command = connection.CreateCommand();
@@ -21,11 +21,12 @@ namespace DoAn_QLTV
             table.Clear();
             adapter.Fill(table);
             dgvThongTinDG.DataSource = table;
+            dgvThongTinDG.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmCapNhatDocGia()
         {
             InitializeComponent();
-            
+
         }
 
         private void frmCapNhatDocGia_Load(object sender, EventArgs e)
@@ -205,5 +206,10 @@ namespace DoAn_QLTV
             frmCapNhatDocGia_Load(sender, e);
         }
 
+        private void frmCapNhatDocGia_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận thoát ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
+        }
     }
 }

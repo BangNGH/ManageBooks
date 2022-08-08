@@ -71,6 +71,7 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Location = new System.Drawing.Point(359, 113);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
@@ -122,6 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(545, 450);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.lblTuKhoa);
@@ -135,6 +137,7 @@
             this.MinimizeBox = false;
             this.Name = "frmTimKiemDG";
             this.Text = "Tìm Kiếm Độc Giả";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTimKiemDG_FormClosing);
             this.Load += new System.EventHandler(this.frmTimKiemDG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinDG)).EndInit();
             this.ResumeLayout(false);

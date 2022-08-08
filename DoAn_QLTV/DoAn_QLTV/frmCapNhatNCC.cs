@@ -22,6 +22,7 @@ namespace DoAn_QLTV
             table.Clear();
             adapter.Fill(table);
             dgvThongTinNCC.DataSource = table;
+            dgvThongTinNCC.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmCapNhatNCC()
         {
@@ -140,6 +141,7 @@ namespace DoAn_QLTV
                     MessageBox.Show(loi.Message);
                 }
             }
+
             frmCapNhatNCC_Load(sender, e);
         }
 
@@ -171,6 +173,12 @@ namespace DoAn_QLTV
             i = dgvThongTinNCC.CurrentRow.Index;
             txtMaNCC.Text = dgvThongTinNCC.Rows[i].Cells[0].Value.ToString();
             txtTenNCC.Text = dgvThongTinNCC.Rows[i].Cells[1].Value.ToString();
+        }
+
+        private void frmCapNhatNCC_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận thoát ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

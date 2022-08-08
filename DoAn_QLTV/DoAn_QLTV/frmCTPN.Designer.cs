@@ -63,10 +63,10 @@
             // 
             this.dgvThongTinCTPN.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvThongTinCTPN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThongTinCTPN.Location = new System.Drawing.Point(65, 222);
+            this.dgvThongTinCTPN.Location = new System.Drawing.Point(65, 207);
             this.dgvThongTinCTPN.Name = "dgvThongTinCTPN";
             this.dgvThongTinCTPN.RowHeadersWidth = 51;
-            this.dgvThongTinCTPN.Size = new System.Drawing.Size(441, 314);
+            this.dgvThongTinCTPN.Size = new System.Drawing.Size(441, 332);
             this.dgvThongTinCTPN.TabIndex = 33;
             this.dgvThongTinCTPN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinCTPN_CellContentClick);
             // 
@@ -108,6 +108,7 @@
             // 
             // btnThoatfrmCTPN
             // 
+            this.btnThoatfrmCTPN.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmCTPN.Location = new System.Drawing.Point(503, 0);
             this.btnThoatfrmCTPN.Name = "btnThoatfrmCTPN";
             this.btnThoatfrmCTPN.Size = new System.Drawing.Size(75, 25);
@@ -171,7 +172,7 @@
             this.txtDonGia.Location = new System.Drawing.Point(360, 78);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(101, 21);
-            this.txtDonGia.TabIndex = 26;
+            this.txtDonGia.TabIndex = 4;
             // 
             // txtSLNhap
             // 
@@ -179,7 +180,7 @@
             this.txtSLNhap.Location = new System.Drawing.Point(360, 35);
             this.txtSLNhap.Name = "txtSLNhap";
             this.txtSLNhap.Size = new System.Drawing.Size(101, 21);
-            this.txtSLNhap.TabIndex = 25;
+            this.txtSLNhap.TabIndex = 2;
             // 
             // lblDonGia
             // 
@@ -271,8 +272,10 @@
             // 
             // frmCTPN
             // 
+            this.AcceptButton = this.btnLuuCTPN;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnThoatfrmCTPN;
             this.ClientSize = new System.Drawing.Size(583, 536);
             this.Controls.Add(this.pnlChucNangDG);
             this.Controls.Add(this.dgvThongTinCTPN);
@@ -281,7 +284,8 @@
             this.MinimizeBox = false;
             this.Name = "frmCTPN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCTPN";
+            this.Text = "Chi Tiết Phiếu Nhập";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCTPN_FormClosing);
             this.Load += new System.EventHandler(this.frmCTPN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinCTPN)).EndInit();
             this.pnlChucNangDG.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Windows.Forms;
 
 namespace DoAn_QLTV
 {
@@ -8,8 +8,7 @@ namespace DoAn_QLTV
         public frmTrangChu()
         {
             InitializeComponent();
-            MaximizeBox = false;
-            MinimizeBox = false;
+
         }
 
 
@@ -28,8 +27,6 @@ namespace DoAn_QLTV
             this.Hide();
             f.ShowDialog();
             this.Show();
-
-
         }
 
         private void btnDoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -59,11 +56,6 @@ namespace DoAn_QLTV
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Close();
-
-        }
-
-        private void RbFTrangChu_Load(object sender, EventArgs e)
-        {
 
         }
 
@@ -137,11 +129,6 @@ namespace DoAn_QLTV
             this.Show();
         }
 
-        private void simpleButton1_Click_1(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void btnCapNhatNCC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmCapNhatNCC f = new frmCapNhatNCC();
@@ -166,12 +153,15 @@ namespace DoAn_QLTV
             this.Show();
         }
 
-        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void frmTrangChu_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
         {
-            frmLapPhieuPhat f = new frmLapPhieuPhat();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            if (MessageBox.Show("Xác nhận thoát chương trình?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

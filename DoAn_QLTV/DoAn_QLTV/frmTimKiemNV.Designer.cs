@@ -41,7 +41,7 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(521, 62);
+            this.btnLoad.Location = new System.Drawing.Point(464, 70);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(75, 23);
             this.btnLoad.TabIndex = 3;
@@ -53,7 +53,7 @@
             // 
             this.lblTuKhoa.AutoSize = true;
             this.lblTuKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuKhoa.Location = new System.Drawing.Point(256, 67);
+            this.lblTuKhoa.Location = new System.Drawing.Point(237, 73);
             this.lblTuKhoa.Name = "lblTuKhoa";
             this.lblTuKhoa.Size = new System.Drawing.Size(66, 18);
             this.lblTuKhoa.TabIndex = 14;
@@ -63,7 +63,7 @@
             // 
             this.lblTimKiemNV.AutoSize = true;
             this.lblTimKiemNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimKiemNV.Location = new System.Drawing.Point(213, 9);
+            this.lblTimKiemNV.Location = new System.Drawing.Point(179, 9);
             this.lblTimKiemNV.Name = "lblTimKiemNV";
             this.lblTimKiemNV.Size = new System.Drawing.Size(260, 31);
             this.lblTimKiemNV.TabIndex = 13;
@@ -71,7 +71,8 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(602, 62);
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnThoat.Location = new System.Drawing.Point(545, 70);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 4;
@@ -84,12 +85,12 @@
             this.dgvThongTinNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThongTinNV.Location = new System.Drawing.Point(2, 137);
             this.dgvThongTinNV.Name = "dgvThongTinNV";
-            this.dgvThongTinNV.Size = new System.Drawing.Size(693, 277);
+            this.dgvThongTinNV.Size = new System.Drawing.Size(618, 277);
             this.dgvThongTinNV.TabIndex = 11;
             // 
             // txtTimNV
             // 
-            this.txtTimNV.Location = new System.Drawing.Point(328, 66);
+            this.txtTimNV.Location = new System.Drawing.Point(309, 72);
             this.txtTimNV.Name = "txtTimNV";
             this.txtTimNV.Size = new System.Drawing.Size(130, 20);
             this.txtTimNV.TabIndex = 2;
@@ -104,7 +105,7 @@
             "Tên nhân viên",
             "Số điện thoại",
             "Chức vụ"});
-            this.cmbTimNV.Location = new System.Drawing.Point(97, 68);
+            this.cmbTimNV.Location = new System.Drawing.Point(81, 71);
             this.cmbTimNV.Name = "cmbTimNV";
             this.cmbTimNV.Size = new System.Drawing.Size(130, 21);
             this.cmbTimNV.TabIndex = 1;
@@ -113,7 +114,7 @@
             // 
             this.lblTruongDuLieu.AutoSize = true;
             this.lblTruongDuLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTruongDuLieu.Location = new System.Drawing.Point(21, 68);
+            this.lblTruongDuLieu.Location = new System.Drawing.Point(5, 71);
             this.lblTruongDuLieu.Name = "lblTruongDuLieu";
             this.lblTruongDuLieu.Size = new System.Drawing.Size(70, 18);
             this.lblTruongDuLieu.TabIndex = 7;
@@ -123,7 +124,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 410);
+            this.CancelButton = this.btnThoat;
+            this.ClientSize = new System.Drawing.Size(621, 410);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.lblTuKhoa);
             this.Controls.Add(this.lblTimKiemNV);
@@ -137,6 +139,7 @@
             this.Name = "frmTimKiemNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm Kiếm Nhân Viên";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTimKiemNV_FormClosing);
             this.Load += new System.EventHandler(this.frmTimKiemNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinNV)).EndInit();
             this.ResumeLayout(false);

@@ -117,6 +117,7 @@
             // 
             // btnThoatfrmSach
             // 
+            this.btnThoatfrmSach.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmSach.Location = new System.Drawing.Point(526, 0);
             this.btnThoatfrmSach.Name = "btnThoatfrmSach";
             this.btnThoatfrmSach.Size = new System.Drawing.Size(75, 25);
@@ -213,7 +214,7 @@
             this.cmbMaNXB.Location = new System.Drawing.Point(424, 75);
             this.cmbMaNXB.Name = "cmbMaNXB";
             this.cmbMaNXB.Size = new System.Drawing.Size(116, 23);
-            this.cmbMaNXB.TabIndex = 5;
+            this.cmbMaNXB.TabIndex = 4;
             this.cmbMaNXB.ValueMember = "MaNXB";
             // 
             // nHAXUATBANBindingSource
@@ -231,7 +232,7 @@
             this.cmbMaTL.Location = new System.Drawing.Point(424, 31);
             this.cmbMaTL.Name = "cmbMaTL";
             this.cmbMaTL.Size = new System.Drawing.Size(116, 23);
-            this.cmbMaTL.TabIndex = 4;
+            this.cmbMaTL.TabIndex = 2;
             this.cmbMaTL.ValueMember = "MaTL";
             // 
             // tHELOAIBindingSource
@@ -283,7 +284,7 @@
             this.txtTenTG.Location = new System.Drawing.Point(138, 117);
             this.txtTenTG.Name = "txtTenTG";
             this.txtTenTG.Size = new System.Drawing.Size(127, 21);
-            this.txtTenTG.TabIndex = 3;
+            this.txtTenTG.TabIndex = 5;
             // 
             // txtTenSach
             // 
@@ -291,7 +292,7 @@
             this.txtTenSach.Location = new System.Drawing.Point(138, 77);
             this.txtTenSach.Name = "txtTenSach";
             this.txtTenSach.Size = new System.Drawing.Size(127, 21);
-            this.txtTenSach.TabIndex = 2;
+            this.txtTenSach.TabIndex = 3;
             // 
             // txtMaSach
             // 
@@ -355,9 +356,11 @@
             // 
             // frmCapNhatSach
             // 
+            this.AcceptButton = this.btnLuuSach;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
+            this.CancelButton = this.btnThoatfrmSach;
             this.ClientSize = new System.Drawing.Size(764, 684);
             this.Controls.Add(this.grbThongTinSach);
             this.Controls.Add(this.dgvThongTinSach);
@@ -367,6 +370,7 @@
             this.Name = "frmCapNhatSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Sách";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCapNhatSach_FormClosing);
             this.Load += new System.EventHandler(this.frmCapNhatSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinSach)).EndInit();
             this.pnlChucNangSach.ResumeLayout(false);

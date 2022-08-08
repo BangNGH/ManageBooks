@@ -135,6 +135,7 @@
             // 
             // btnThoatfrmCapNhatTL
             // 
+            this.btnThoatfrmCapNhatTL.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmCapNhatTL.Location = new System.Drawing.Point(220, 45);
             this.btnThoatfrmCapNhatTL.Name = "btnThoatfrmCapNhatTL";
             this.btnThoatfrmCapNhatTL.Size = new System.Drawing.Size(75, 25);
@@ -186,9 +187,11 @@
             // 
             // frmCapNhatTL
             // 
+            this.AcceptButton = this.btnLuuTL;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
+            this.CancelButton = this.btnThoatfrmCapNhatTL;
             this.ClientSize = new System.Drawing.Size(589, 222);
             this.Controls.Add(this.dgvThongTinTL);
             this.Controls.Add(this.grbThongTinTL);
@@ -198,6 +201,7 @@
             this.Name = "frmCapNhatTL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Thể Loại";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCapNhatTL_FormClosing);
             this.Load += new System.EventHandler(this.frmCapNhatTL_Load);
             this.grbThongTinTL.ResumeLayout(false);
             this.grbThongTinTL.PerformLayout();

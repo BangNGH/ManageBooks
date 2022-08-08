@@ -20,6 +20,7 @@ namespace DoAn_QLTV
             table.Clear();
             adapter.Fill(table);
             dgvThongTinDG.DataSource = table;
+            dgvThongTinDG.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmTimKiemDG()
         {
@@ -75,6 +76,12 @@ namespace DoAn_QLTV
             connection = new SqlConnection(str);
             connection.Open();
             loadThongTinDG();
+        }
+
+        private void frmTimKiemDG_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận thoát?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

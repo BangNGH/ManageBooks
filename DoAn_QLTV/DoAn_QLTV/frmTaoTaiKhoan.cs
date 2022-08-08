@@ -89,5 +89,11 @@ namespace DoAn_QLTV
 
             }
         }
+
+        private void frmTaoTaiKhoan_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show(" Xác nhận thoát ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
+        }
     }
 }

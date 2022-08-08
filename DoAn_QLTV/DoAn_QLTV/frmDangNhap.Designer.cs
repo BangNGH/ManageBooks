@@ -52,7 +52,6 @@
             this.lblTenDangNhap.Size = new System.Drawing.Size(93, 19);
             this.lblTenDangNhap.TabIndex = 0;
             this.lblTenDangNhap.Text = "Tài Khoản:";
-            this.lblTenDangNhap.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblMatKhau
             // 
@@ -63,28 +62,28 @@
             this.lblMatKhau.Size = new System.Drawing.Size(87, 19);
             this.lblMatKhau.TabIndex = 1;
             this.lblMatKhau.Text = "Mật Khẩu:";
-            this.lblMatKhau.Click += new System.EventHandler(this.txbMatKhau_Click);
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Location = new System.Drawing.Point(114, 3);
+            this.txtTenDangNhap.MaxLength = 64;
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(136, 20);
             this.txtTenDangNhap.TabIndex = 2;
-            this.txtTenDangNhap.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(114, 1);
+            this.txtMatKhau.MaxLength = 64;
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(136, 20);
             this.txtMatKhau.TabIndex = 3;
             this.txtMatKhau.UseSystemPasswordChar = true;
-            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
             // 
             // btThoat
             // 
-            this.btThoat.Location = new System.Drawing.Point(306, 368);
+            this.btThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btThoat.Location = new System.Drawing.Point(315, 368);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(75, 23);
             this.btThoat.TabIndex = 7;
@@ -94,7 +93,7 @@
             // 
             // btDangNhap
             // 
-            this.btDangNhap.Location = new System.Drawing.Point(204, 368);
+            this.btDangNhap.Location = new System.Drawing.Point(213, 368);
             this.btDangNhap.Name = "btDangNhap";
             this.btDangNhap.Size = new System.Drawing.Size(75, 23);
             this.btDangNhap.TabIndex = 6;
@@ -108,7 +107,7 @@
             this.panel3.Controls.Add(this.lblMatKhau);
             this.panel3.Location = new System.Drawing.Point(171, 320);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(263, 25);
+            this.panel3.Size = new System.Drawing.Size(250, 25);
             this.panel3.TabIndex = 5;
             // 
             // panel2
@@ -117,20 +116,18 @@
             this.panel2.Controls.Add(this.lblTenDangNhap);
             this.panel2.Location = new System.Drawing.Point(171, 260);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(263, 28);
+            this.panel2.Size = new System.Drawing.Size(250, 28);
             this.panel2.TabIndex = 4;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(199, 214);
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(233, 214);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 29);
+            this.label1.Size = new System.Drawing.Size(148, 31);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Welcome to Login";
-            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+            this.label1.Text = "Đăng Nhập";
             // 
             // pictureBox1
             // 
@@ -146,9 +143,11 @@
             // 
             // frmDangNhap
             // 
+            this.AcceptButton = this.btDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._21;
+            this.CancelButton = this.btThoat;
             this.ClientSize = new System.Drawing.Size(586, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
@@ -161,7 +160,6 @@
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần Mềm Quản Lý Thư Viên";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDangNhap_FormClosing);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);

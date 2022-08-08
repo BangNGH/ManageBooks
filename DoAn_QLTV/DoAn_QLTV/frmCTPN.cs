@@ -21,6 +21,7 @@ namespace DoAn_QLTV
             table.Clear();
             adapter.Fill(table);
             dgvThongTinCTPN.DataSource = table;
+            dgvThongTinCTPN.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmCTPN()
         {
@@ -194,6 +195,12 @@ namespace DoAn_QLTV
             cmbMaSach.SelectedValue = dgvThongTinCTPN.Rows[i].Cells[1].Value.ToString();
             txtSLNhap.Text = dgvThongTinCTPN.Rows[i].Cells[2].Value.ToString();
             txtDonGia.Text = dgvThongTinCTPN.Rows[i].Cells[3].Value.ToString();
+        }
+
+        private void frmCTPN_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận thoát ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

@@ -9,24 +9,8 @@ namespace DoAn_QLTV
         public frmDangNhap()
         {
             InitializeComponent();
+            
         }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txbMatKhau_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btDangNhap_Click(object sender, EventArgs e)
         {
             string taiKhoan = txtTenDangNhap.Text;
@@ -57,9 +41,7 @@ namespace DoAn_QLTV
                     frmTrangChu f = new frmTrangChu();
                     this.Hide();
                     f.ShowDialog();
-                    txtMatKhau.Text = "";
-                    this.Show();
-
+                    Application.Exit();
                 }
             }
         }
@@ -67,45 +49,11 @@ namespace DoAn_QLTV
         {
             Application.Exit();
         }
-
-        private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Xác nhận thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-                e.Cancel = true;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMatKhau_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void frmDangNhap_Load(object sender, FormClosingEventArgs e)
+        private void frmDangNhap_Load(object sender, EventArgs e)
         {
             txtMatKhau.Text = "";
         }
+
+
     }
 }

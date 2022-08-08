@@ -21,6 +21,7 @@ namespace DoAn_QLTV
             table.Clear();
             adapter.Fill(table);
             dgvThongTinNV.DataSource = table;
+            dgvThongTinNV.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmCapNhatNhanVien()
         {
@@ -261,6 +262,12 @@ namespace DoAn_QLTV
         private void btnKhongLuuNV_Click(object sender, EventArgs e)
         {
             frmCapNhatNhanVien_Load(sender, e);
+        }
+
+        private void frmCapNhatNhanVien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận thoát ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }
