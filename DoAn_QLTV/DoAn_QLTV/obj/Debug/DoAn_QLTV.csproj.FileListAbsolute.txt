@@ -125,6 +125,8 @@ D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmTimKiemSach.res
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmTimKiemDG.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmTimKiemNV.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmThongTinHoTro.resources
-D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCapNhatNCC.resources
-D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmPhieuNhapSach.resources
-D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmCTPN.resources
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DevExpress.XtraLayout.v22.1.dll
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DevExpress.XtraLayout.v22.1.xml
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\de\DevExpress.XtraLayout.v22.1.resources.dll
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\es\DevExpress.XtraLayout.v22.1.resources.dll
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\ja\DevExpress.XtraLayout.v22.1.resources.dll

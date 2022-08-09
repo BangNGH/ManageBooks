@@ -308,16 +308,16 @@
             this.pnlChucNangDG.Controls.Add(this.btnXoaCTPM);
             this.pnlChucNangDG.Controls.Add(this.btnSuaCTPM);
             this.pnlChucNangDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlChucNangDG.Location = new System.Drawing.Point(29, 175);
+            this.pnlChucNangDG.Location = new System.Drawing.Point(-2, 175);
             this.pnlChucNangDG.Name = "pnlChucNangDG";
-            this.pnlChucNangDG.Size = new System.Drawing.Size(581, 26);
+            this.pnlChucNangDG.Size = new System.Drawing.Size(626, 24);
             this.pnlChucNangDG.TabIndex = 31;
             // 
             // btnThemCTPM
             // 
-            this.btnThemCTPM.Location = new System.Drawing.Point(0, 0);
+            this.btnThemCTPM.Location = new System.Drawing.Point(3, 0);
             this.btnThemCTPM.Name = "btnThemCTPM";
-            this.btnThemCTPM.Size = new System.Drawing.Size(75, 26);
+            this.btnThemCTPM.Size = new System.Drawing.Size(90, 24);
             this.btnThemCTPM.TabIndex = 13;
             this.btnThemCTPM.Text = "Thêm";
             this.btnThemCTPM.UseVisualStyleBackColor = true;
@@ -326,9 +326,9 @@
             // btnKhongLuuCTPM
             // 
             this.btnKhongLuuCTPM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnKhongLuuCTPM.Location = new System.Drawing.Point(386, -1);
+            this.btnKhongLuuCTPM.Location = new System.Drawing.Point(432, -1);
             this.btnKhongLuuCTPM.Name = "btnKhongLuuCTPM";
-            this.btnKhongLuuCTPM.Size = new System.Drawing.Size(99, 27);
+            this.btnKhongLuuCTPM.Size = new System.Drawing.Size(91, 25);
             this.btnKhongLuuCTPM.TabIndex = 18;
             this.btnKhongLuuCTPM.Text = "Không Lưu";
             this.btnKhongLuuCTPM.UseVisualStyleBackColor = true;
@@ -337,9 +337,9 @@
             // btnThoatfrmCTPM
             // 
             this.btnThoatfrmCTPM.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnThoatfrmCTPM.Location = new System.Drawing.Point(503, 0);
+            this.btnThoatfrmCTPM.Location = new System.Drawing.Point(539, 0);
             this.btnThoatfrmCTPM.Name = "btnThoatfrmCTPM";
-            this.btnThoatfrmCTPM.Size = new System.Drawing.Size(75, 25);
+            this.btnThoatfrmCTPM.Size = new System.Drawing.Size(90, 24);
             this.btnThoatfrmCTPM.TabIndex = 14;
             this.btnThoatfrmCTPM.Text = "Thoát";
             this.btnThoatfrmCTPM.UseVisualStyleBackColor = true;
@@ -347,9 +347,9 @@
             // 
             // btnLuuCTPM
             // 
-            this.btnLuuCTPM.Location = new System.Drawing.Point(288, -1);
+            this.btnLuuCTPM.Location = new System.Drawing.Point(326, 0);
             this.btnLuuCTPM.Name = "btnLuuCTPM";
-            this.btnLuuCTPM.Size = new System.Drawing.Size(75, 27);
+            this.btnLuuCTPM.Size = new System.Drawing.Size(90, 24);
             this.btnLuuCTPM.TabIndex = 17;
             this.btnLuuCTPM.Text = "Lưu";
             this.btnLuuCTPM.UseVisualStyleBackColor = true;
@@ -357,9 +357,9 @@
             // 
             // btnXoaCTPM
             // 
-            this.btnXoaCTPM.Location = new System.Drawing.Point(99, 0);
+            this.btnXoaCTPM.Location = new System.Drawing.Point(108, 0);
             this.btnXoaCTPM.Name = "btnXoaCTPM";
-            this.btnXoaCTPM.Size = new System.Drawing.Size(75, 26);
+            this.btnXoaCTPM.Size = new System.Drawing.Size(90, 24);
             this.btnXoaCTPM.TabIndex = 15;
             this.btnXoaCTPM.Text = "Xóa";
             this.btnXoaCTPM.UseVisualStyleBackColor = true;
@@ -367,9 +367,9 @@
             // 
             // btnSuaCTPM
             // 
-            this.btnSuaCTPM.Location = new System.Drawing.Point(195, 0);
+            this.btnSuaCTPM.Location = new System.Drawing.Point(215, 0);
             this.btnSuaCTPM.Name = "btnSuaCTPM";
-            this.btnSuaCTPM.Size = new System.Drawing.Size(75, 26);
+            this.btnSuaCTPM.Size = new System.Drawing.Size(90, 24);
             this.btnSuaCTPM.TabIndex = 16;
             this.btnSuaCTPM.Text = "Sửa";
             this.btnSuaCTPM.UseVisualStyleBackColor = true;

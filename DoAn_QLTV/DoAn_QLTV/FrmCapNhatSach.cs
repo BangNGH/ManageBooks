@@ -16,7 +16,7 @@ namespace DoAn_QLTV
         void loadThongTinSach()
         {
             command = connection.CreateCommand();
-            command.CommandText = "select * from SACH";
+            command.CommandText = "select b.MaSach 'Mã sách', b.TenSach 'Tên sách', b.TenTacGia 'Tên tác giả', c.TenTL 'Thể loại' , d.TenNXB 'Tên NXB' ,b.NamXB 'Năm XB', a.ViTri 'Vị trí' from KESACH as a, SACH as b, THELOAI as c, NHAXUATBAN as d where a.MaKeSach = b.MaKeSach and b.MaTL = c.MaTL and d.MaNXB = b.MaNXB ";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);

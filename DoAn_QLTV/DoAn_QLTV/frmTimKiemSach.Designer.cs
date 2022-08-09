@@ -66,6 +66,7 @@
             // txtTimSach
             // 
             this.txtTimSach.Location = new System.Drawing.Point(322, 66);
+            this.txtTimSach.MaxLength = 64;
             this.txtTimSach.Name = "txtTimSach";
             this.txtTimSach.Size = new System.Drawing.Size(130, 20);
             this.txtTimSach.TabIndex = 2;

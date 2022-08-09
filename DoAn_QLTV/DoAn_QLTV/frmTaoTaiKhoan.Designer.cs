@@ -167,9 +167,9 @@
             // 
             this.cmbDG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDG.FormattingEnabled = true;
-            this.cmbDG.Location = new System.Drawing.Point(117, 1);
+            this.cmbDG.Location = new System.Drawing.Point(114, 1);
             this.cmbDG.Name = "cmbDG";
-            this.cmbDG.Size = new System.Drawing.Size(133, 21);
+            this.cmbDG.Size = new System.Drawing.Size(136, 21);
             this.cmbDG.TabIndex = 4;
             // 
             // lblMaTKDG

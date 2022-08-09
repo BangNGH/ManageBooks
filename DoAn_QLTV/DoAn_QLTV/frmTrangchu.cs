@@ -128,31 +128,6 @@ namespace DoAn_QLTV
             f.ShowDialog();
             this.Show();
         }
-
-        private void btnCapNhatNCC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            frmCapNhatNCC f = new frmCapNhatNCC();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
-
-        private void btnPhieuNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            frmPhieuNhapSach f = new frmPhieuNhapSach();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
-
-        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            frmCTPN f = new frmCTPN();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
-
         private void frmTrangChu_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
         {
             if (MessageBox.Show("Xác nhận thoát chương trình?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
@@ -162,6 +137,24 @@ namespace DoAn_QLTV
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnThongKeSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmBaoCaoThongKe f = new frmBaoCaoThongKe();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnThongKeNV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnThongKeDG_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

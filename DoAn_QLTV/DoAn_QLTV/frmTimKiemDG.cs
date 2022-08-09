@@ -32,7 +32,7 @@ namespace DoAn_QLTV
             if (cmbTimDG.Text == "Mã độc giả")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select MaDG 'Mã độc giả', TenDG 'Tên độc giả', NgaySinhDG 'Ngày sinh', GioiTinh 'Giới tính', SDTDG 'Điện Thoại' from DOCGIA where MaDG like '%" + txtTimDG.Text.Trim() + "%' ";
+                command.CommandText = "select MaDG 'Mã độc giả', TenDG 'Tên độc giả', NgaySinhDG 'Ngày sinh', GioiTinh 'Giới tính', SDTDG 'Điện Thoại' from DOCGIA where MaDG ='" + txtTimDG.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -42,7 +42,7 @@ namespace DoAn_QLTV
             else if (cmbTimDG.Text == "Tên độc giả")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select MaDG 'Mã độc giả', TenDG 'Tên độc giả', NgaySinhDG 'Ngày sinh', GioiTinh 'Giới tính', SDTDG 'Điện Thoại' from DOCGIA where TenDG like N'%" + txtTimDG.Text.Trim() + "%' ";
+                command.CommandText = "select MaDG 'Mã độc giả', TenDG 'Tên độc giả', NgaySinhDG 'Ngày sinh', GioiTinh 'Giới tính', SDTDG 'Điện Thoại' from DOCGIA where TenDG = N'" + txtTimDG.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -52,7 +52,7 @@ namespace DoAn_QLTV
             else
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select MaDG 'Mã độc giả', TenDG 'Tên độc giả', NgaySinhDG 'Ngày sinh', GioiTinh 'Giới tính', SDTDG 'Điện Thoại' from DOCGIA where SDTDG like '%" + txtTimDG.Text.Trim() + "%' ";
+                command.CommandText = "select MaDG 'Mã độc giả', TenDG 'Tên độc giả', NgaySinhDG 'Ngày sinh', GioiTinh 'Giới tính', SDTDG 'Điện Thoại' from DOCGIA where SDTDG = '" + txtTimDG.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);

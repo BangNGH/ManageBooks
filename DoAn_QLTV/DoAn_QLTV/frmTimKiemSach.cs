@@ -46,7 +46,7 @@ namespace DoAn_QLTV
             if (cmbTimSach.Text == "Mã sách")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and a.MaSach like '%" + txtTimSach.Text.Trim() + "%' ";
+                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and a.MaSach = '" + txtTimSach.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -56,7 +56,7 @@ namespace DoAn_QLTV
             else if (cmbTimSach.Text == "Tên sách")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and a.TenSach like N'%" + txtTimSach.Text.Trim() + "%' ";
+                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and a.TenSach = N'" + txtTimSach.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -66,7 +66,7 @@ namespace DoAn_QLTV
             else if (cmbTimSach.Text == "Tên tác giả")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and a.TenTacGia like N'%" + txtTimSach.Text.Trim() + "%' ";
+                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and a.TenTacGia = N'" + txtTimSach.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -76,7 +76,7 @@ namespace DoAn_QLTV
             else
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and b.TenTL like N'%" + txtTimSach.Text.Trim() + "%' ";
+                command.CommandText = "select a.MaSach 'Mã sách', a.TenSach 'Tên sách', a.TenTacGia 'Tên tác giả', b.TenTL 'Thể loại', a.MaNXB 'Mã NXB', a.NamXB 'Năm XB', a.MaKeSach 'Mã kệ sách' from SACH as a, THELOAI as b where a.MaTL = b.MaTL and b.TenTL = N'" + txtTimSach.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);

@@ -32,7 +32,7 @@ namespace DoAn_QLTV
             if (cmbTimNV.Text == "Mã nhân viên")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where MaNV like '%" + txtTimNV.Text.Trim() + "%' ";
+                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where MaNV = '" + txtTimNV.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -42,7 +42,7 @@ namespace DoAn_QLTV
             else if (cmbTimNV.Text == "Tên nhân viên")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where TenNV like N'%" + txtTimNV.Text.Trim() + "%' ";
+                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where TenNV = N'" + txtTimNV.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -52,7 +52,7 @@ namespace DoAn_QLTV
             else if (cmbTimNV.Text == "Chức vụ")
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where ChucVu like N'%" + txtTimNV.Text.Trim() + "%' ";
+                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where ChucVu = N'" + txtTimNV.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);
@@ -62,7 +62,7 @@ namespace DoAn_QLTV
             else
             {
                 command = connection.CreateCommand();
-                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where SDT like '%" + txtTimNV.Text.Trim() + "%' ";
+                command.CommandText = "select MaNV 'Mã nhân viên', TenNV 'Tên Nhân viên', NgaySinhNV 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Điện Thoại', ChucVu 'Chức vụ' from NHANVIEN where SDT = '" + txtTimNV.Text.Trim() + "' ";
                 adapter.SelectCommand = command;
                 table.Clear();
                 adapter.Fill(table);

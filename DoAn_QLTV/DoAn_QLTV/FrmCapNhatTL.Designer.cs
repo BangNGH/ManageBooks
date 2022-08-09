@@ -109,7 +109,7 @@
             this.pnlChucNangSach.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlChucNangSach.Location = new System.Drawing.Point(3, 133);
             this.pnlChucNangSach.Name = "pnlChucNangSach";
-            this.pnlChucNangSach.Size = new System.Drawing.Size(301, 82);
+            this.pnlChucNangSach.Size = new System.Drawing.Size(310, 77);
             this.pnlChucNangSach.TabIndex = 19;
             // 
             // btnThemTL
@@ -127,7 +127,7 @@
             this.btnKhongLuuTL.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnKhongLuuTL.Location = new System.Drawing.Point(107, 45);
             this.btnKhongLuuTL.Name = "btnKhongLuuTL";
-            this.btnKhongLuuTL.Size = new System.Drawing.Size(94, 24);
+            this.btnKhongLuuTL.Size = new System.Drawing.Size(90, 24);
             this.btnKhongLuuTL.TabIndex = 17;
             this.btnKhongLuuTL.Text = "Không Lưu";
             this.btnKhongLuuTL.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.btnThoatfrmCapNhatTL.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoatfrmCapNhatTL.Location = new System.Drawing.Point(220, 45);
             this.btnThoatfrmCapNhatTL.Name = "btnThoatfrmCapNhatTL";
-            this.btnThoatfrmCapNhatTL.Size = new System.Drawing.Size(75, 25);
+            this.btnThoatfrmCapNhatTL.Size = new System.Drawing.Size(90, 24);
             this.btnThoatfrmCapNhatTL.TabIndex = 18;
             this.btnThoatfrmCapNhatTL.Text = "Thoát";
             this.btnThoatfrmCapNhatTL.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@
             // 
             this.btnLuuTL.Location = new System.Drawing.Point(3, 45);
             this.btnLuuTL.Name = "btnLuuTL";
-            this.btnLuuTL.Size = new System.Drawing.Size(75, 24);
+            this.btnLuuTL.Size = new System.Drawing.Size(90, 24);
             this.btnLuuTL.TabIndex = 16;
             this.btnLuuTL.Text = "Lưu";
             this.btnLuuTL.UseVisualStyleBackColor = true;
@@ -158,7 +158,7 @@
             // 
             this.btnXoaTL.Location = new System.Drawing.Point(108, 0);
             this.btnXoaTL.Name = "btnXoaTL";
-            this.btnXoaTL.Size = new System.Drawing.Size(75, 24);
+            this.btnXoaTL.Size = new System.Drawing.Size(90, 24);
             this.btnXoaTL.TabIndex = 14;
             this.btnXoaTL.Text = "Xóa";
             this.btnXoaTL.UseVisualStyleBackColor = true;
@@ -168,7 +168,7 @@
             // 
             this.btnSuaTL.Location = new System.Drawing.Point(220, 1);
             this.btnSuaTL.Name = "btnSuaTL";
-            this.btnSuaTL.Size = new System.Drawing.Size(75, 23);
+            this.btnSuaTL.Size = new System.Drawing.Size(90, 24);
             this.btnSuaTL.TabIndex = 15;
             this.btnSuaTL.Text = "Sửa";
             this.btnSuaTL.UseVisualStyleBackColor = true;
@@ -178,10 +178,10 @@
             // 
             this.dgvThongTinTL.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvThongTinTL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThongTinTL.Location = new System.Drawing.Point(310, 19);
+            this.dgvThongTinTL.Location = new System.Drawing.Point(319, 1);
             this.dgvThongTinTL.Name = "dgvThongTinTL";
             this.dgvThongTinTL.RowHeadersWidth = 51;
-            this.dgvThongTinTL.Size = new System.Drawing.Size(277, 196);
+            this.dgvThongTinTL.Size = new System.Drawing.Size(277, 209);
             this.dgvThongTinTL.TabIndex = 23;
             this.dgvThongTinTL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinTL_CellContentClick);
             // 
@@ -192,7 +192,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
             this.CancelButton = this.btnThoatfrmCapNhatTL;
-            this.ClientSize = new System.Drawing.Size(589, 222);
+            this.ClientSize = new System.Drawing.Size(598, 213);
             this.Controls.Add(this.dgvThongTinTL);
             this.Controls.Add(this.grbThongTinTL);
             this.Controls.Add(this.pnlChucNangSach);

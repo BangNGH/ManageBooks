@@ -74,9 +74,10 @@ namespace DoAn_QLTV
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(518, 0);
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnThoat.Location = new System.Drawing.Point(534, 0);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 25);
+            this.btnThoat.Size = new System.Drawing.Size(90, 24);
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -86,7 +87,7 @@ namespace DoAn_QLTV
             // 
             this.btnXoaDG.Location = new System.Drawing.Point(108, 0);
             this.btnXoaDG.Name = "btnXoaDG";
-            this.btnXoaDG.Size = new System.Drawing.Size(75, 24);
+            this.btnXoaDG.Size = new System.Drawing.Size(90, 24);
             this.btnXoaDG.TabIndex = 7;
             this.btnXoaDG.Text = "Xóa";
             this.btnXoaDG.UseVisualStyleBackColor = true;
@@ -94,9 +95,9 @@ namespace DoAn_QLTV
             // 
             // btnSuaDG
             // 
-            this.btnSuaDG.Location = new System.Drawing.Point(207, 1);
+            this.btnSuaDG.Location = new System.Drawing.Point(217, 1);
             this.btnSuaDG.Name = "btnSuaDG";
-            this.btnSuaDG.Size = new System.Drawing.Size(75, 23);
+            this.btnSuaDG.Size = new System.Drawing.Size(90, 24);
             this.btnSuaDG.TabIndex = 8;
             this.btnSuaDG.Text = "Sửa";
             this.btnSuaDG.UseVisualStyleBackColor = true;
@@ -104,9 +105,9 @@ namespace DoAn_QLTV
             // 
             // btnLuuDG
             // 
-            this.btnLuuDG.Location = new System.Drawing.Point(309, 1);
+            this.btnLuuDG.Location = new System.Drawing.Point(326, 0);
             this.btnLuuDG.Name = "btnLuuDG";
-            this.btnLuuDG.Size = new System.Drawing.Size(75, 24);
+            this.btnLuuDG.Size = new System.Drawing.Size(90, 24);
             this.btnLuuDG.TabIndex = 9;
             this.btnLuuDG.Text = "Lưu";
             this.btnLuuDG.UseVisualStyleBackColor = true;
@@ -122,17 +123,17 @@ namespace DoAn_QLTV
             this.pnlChucNangDG.Controls.Add(this.btnXoaDG);
             this.pnlChucNangDG.Controls.Add(this.btnSuaDG);
             this.pnlChucNangDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlChucNangDG.Location = new System.Drawing.Point(12, 175);
+            this.pnlChucNangDG.Location = new System.Drawing.Point(0, 175);
             this.pnlChucNangDG.Name = "pnlChucNangDG";
-            this.pnlChucNangDG.Size = new System.Drawing.Size(596, 24);
+            this.pnlChucNangDG.Size = new System.Drawing.Size(627, 24);
             this.pnlChucNangDG.TabIndex = 18;
             // 
             // btnKhongLuuDG
             // 
             this.btnKhongLuuDG.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnKhongLuuDG.Location = new System.Drawing.Point(409, 0);
+            this.btnKhongLuuDG.Location = new System.Drawing.Point(426, 0);
             this.btnKhongLuuDG.Name = "btnKhongLuuDG";
-            this.btnKhongLuuDG.Size = new System.Drawing.Size(94, 24);
+            this.btnKhongLuuDG.Size = new System.Drawing.Size(90, 24);
             this.btnKhongLuuDG.TabIndex = 10;
             this.btnKhongLuuDG.Text = "Không Lưu";
             this.btnKhongLuuDG.UseVisualStyleBackColor = true;
@@ -263,7 +264,7 @@ namespace DoAn_QLTV
             this.dgvThongTinDG.Location = new System.Drawing.Point(0, 231);
             this.dgvThongTinDG.Name = "dgvThongTinDG";
             this.dgvThongTinDG.RowHeadersWidth = 51;
-            this.dgvThongTinDG.Size = new System.Drawing.Size(620, 314);
+            this.dgvThongTinDG.Size = new System.Drawing.Size(627, 314);
             this.dgvThongTinDG.TabIndex = 21;
             this.dgvThongTinDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinDG_CellContentClick);
             // 
@@ -275,7 +276,7 @@ namespace DoAn_QLTV
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::DoAn_QLTV.Properties.Resources._5;
             this.CancelButton = this.btnThoat;
-            this.ClientSize = new System.Drawing.Size(620, 574);
+            this.ClientSize = new System.Drawing.Size(625, 574);
             this.Controls.Add(this.dgvThongTinDG);
             this.Controls.Add(this.grbThongTinDG);
             this.Controls.Add(this.pnlChucNangDG);

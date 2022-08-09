@@ -66,7 +66,7 @@
             // 
             this.btnThemNV.Location = new System.Drawing.Point(0, 0);
             this.btnThemNV.Name = "btnThemNV";
-            this.btnThemNV.Size = new System.Drawing.Size(90, 24);
+            this.btnThemNV.Size = new System.Drawing.Size(90, 26);
             this.btnThemNV.TabIndex = 13;
             this.btnThemNV.Text = "Thêm";
             this.btnThemNV.UseVisualStyleBackColor = true;
@@ -75,9 +75,9 @@
             // btnThoatfrmNV
             // 
             this.btnThoatfrmNV.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnThoatfrmNV.Location = new System.Drawing.Point(507, 1);
+            this.btnThoatfrmNV.Location = new System.Drawing.Point(527, 1);
             this.btnThoatfrmNV.Name = "btnThoatfrmNV";
-            this.btnThoatfrmNV.Size = new System.Drawing.Size(75, 23);
+            this.btnThoatfrmNV.Size = new System.Drawing.Size(90, 26);
             this.btnThoatfrmNV.TabIndex = 16;
             this.btnThoatfrmNV.Text = "Thoát";
             this.btnThoatfrmNV.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             // 
             this.btnXoaNV.Location = new System.Drawing.Point(108, 0);
             this.btnXoaNV.Name = "btnXoaNV";
-            this.btnXoaNV.Size = new System.Drawing.Size(75, 24);
+            this.btnXoaNV.Size = new System.Drawing.Size(90, 26);
             this.btnXoaNV.TabIndex = 14;
             this.btnXoaNV.Text = "Xóa";
             this.btnXoaNV.UseVisualStyleBackColor = true;
@@ -95,9 +95,9 @@
             // 
             // btnSuaNV
             // 
-            this.btnSuaNV.Location = new System.Drawing.Point(207, 1);
+            this.btnSuaNV.Location = new System.Drawing.Point(217, 1);
             this.btnSuaNV.Name = "btnSuaNV";
-            this.btnSuaNV.Size = new System.Drawing.Size(75, 23);
+            this.btnSuaNV.Size = new System.Drawing.Size(90, 25);
             this.btnSuaNV.TabIndex = 15;
             this.btnSuaNV.Text = "Sửa";
             this.btnSuaNV.UseVisualStyleBackColor = true;
@@ -105,9 +105,9 @@
             // 
             // btnLuuNV
             // 
-            this.btnLuuNV.Location = new System.Drawing.Point(309, 0);
+            this.btnLuuNV.Location = new System.Drawing.Point(327, 0);
             this.btnLuuNV.Name = "btnLuuNV";
-            this.btnLuuNV.Size = new System.Drawing.Size(75, 24);
+            this.btnLuuNV.Size = new System.Drawing.Size(90, 26);
             this.btnLuuNV.TabIndex = 17;
             this.btnLuuNV.Text = "Lưu";
             this.btnLuuNV.UseVisualStyleBackColor = true;
@@ -123,17 +123,17 @@
             this.pnlChucNangNV.Controls.Add(this.btnXoaNV);
             this.pnlChucNangNV.Controls.Add(this.btnSuaNV);
             this.pnlChucNangNV.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlChucNangNV.Location = new System.Drawing.Point(12, 188);
+            this.pnlChucNangNV.Location = new System.Drawing.Point(0, 188);
             this.pnlChucNangNV.Name = "pnlChucNangNV";
-            this.pnlChucNangNV.Size = new System.Drawing.Size(596, 26);
+            this.pnlChucNangNV.Size = new System.Drawing.Size(620, 26);
             this.pnlChucNangNV.TabIndex = 7;
             // 
             // btnKhongLuuNV
             // 
             this.btnKhongLuuNV.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnKhongLuuNV.Location = new System.Drawing.Point(396, 0);
+            this.btnKhongLuuNV.Location = new System.Drawing.Point(426, -1);
             this.btnKhongLuuNV.Name = "btnKhongLuuNV";
-            this.btnKhongLuuNV.Size = new System.Drawing.Size(94, 24);
+            this.btnKhongLuuNV.Size = new System.Drawing.Size(90, 26);
             this.btnKhongLuuNV.TabIndex = 18;
             this.btnKhongLuuNV.Text = "Không Lưu";
             this.btnKhongLuuNV.UseVisualStyleBackColor = true;
