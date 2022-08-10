@@ -264,3 +264,4 @@ select distinct b.MaSach 'Mã sách', b.TenSach 'Tên sách', b.TenTacGia 'Tên 
 from CT_PHIEUMUON as a, SACH as b, THELOAI as c, NHAXUATBAN as d
 where b.MaTL = c.MaTL and d.MaNXB = b.MaNXB and a.MaSach = b.MaSach
 group by a.MaPM
+

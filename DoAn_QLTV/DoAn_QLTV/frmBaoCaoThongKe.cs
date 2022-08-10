@@ -2,10 +2,9 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-
 namespace DoAn_QLTV
 {
-    public partial class frmBaoCaoThongKe : Form
+    public partial class frmBaoCaoThongKe : DevExpress.XtraEditors.XtraForm
     {
         SqlConnection connection;
         SqlCommand command, cm1;
@@ -68,24 +67,16 @@ namespace DoAn_QLTV
             Close();
         }
 
-        private void dgvThongTinSach_AllowUserToAddRowsChanged(object sender, EventArgs e)
+        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < dgvThongTinSach.Rows.Count; i++)
-            {
-                dgvThongTinSach.Rows[i].HeaderCell.Value = (i + 1).ToString();
-            }
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBox1.Text == "Tất cả sách")
+            if (comboBoxEdit1.Text == "Tất cả sách")
             {
                 connection = new SqlConnection(str);
                 connection.Open();
                 loadThongTinTatCaSach();
 
             }
-            else if (comboBox1.Text == "Sách được mượn")
+            else if (comboBoxEdit1.Text == "Sách được mượn")
             {
                 connection = new SqlConnection(str);
                 connection.Open();
@@ -98,5 +89,6 @@ namespace DoAn_QLTV
                 loadThongTinSachHienCo();
             }
         }
+
     }
 }
