@@ -129,7 +129,6 @@ D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DevExpress.XtraLayout.v22.1.
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\de\DevExpress.XtraLayout.v22.1.resources.dll
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\es\DevExpress.XtraLayout.v22.1.resources.dll
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\ja\DevExpress.XtraLayout.v22.1.resources.dll
-D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.XtraForm1.resources
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DevExpress.Charts.v22.1.Core.dll
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DevExpress.CodeParser.v22.1.dll
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\DevExpress.DataAccess.v22.1.dll
@@ -293,3 +292,4 @@ D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\pt\Microsoft.ReportViewer.Wi
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\CNPM\QuanLyThuVien\DoAn_QLTV\DoAn_QLTV\obj\Debug\DoAn_QLTV.frmBaoCaoThongKe.resources

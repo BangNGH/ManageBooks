@@ -9,7 +9,6 @@ namespace DoAn_QLTV
         public frmDangNhap()
         {
             InitializeComponent();
-            
         }
         private void btDangNhap_Click(object sender, EventArgs e)
         {
@@ -38,22 +37,15 @@ namespace DoAn_QLTV
                 }
                 else
                 {
-                    frmTrangChu f = new frmTrangChu();
-                    this.Hide();
-                    f.ShowDialog();
-                    Application.Exit();
+
+                    this.Close();
                 }
             }
         }
         private void btThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-        private void frmDangNhap_Load(object sender, EventArgs e)
-        {
-            txtMatKhau.Text = "";
-        }
+            Application.ExitThread();
 
-
+        }
     }
 }

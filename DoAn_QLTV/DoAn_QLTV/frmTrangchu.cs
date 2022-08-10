@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace DoAn_QLTV
 {
@@ -8,10 +9,7 @@ namespace DoAn_QLTV
         public frmTrangChu()
         {
             InitializeComponent();
-
         }
-
-
         private void btnCapNhatDocGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmCapNhatDocGia f = new frmCapNhatDocGia();
@@ -53,10 +51,12 @@ namespace DoAn_QLTV
             this.Show();
         }
 
-        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        public void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Close();
-
+            frmDangNhap f = new frmDangNhap();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
         private void btnTaoTaiKhoan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -147,14 +147,12 @@ namespace DoAn_QLTV
             this.Show();
         }
 
-        private void btnThongKeNV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void frmTrangChu_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnThongKeDG_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
+            frmDangNhap f = new frmDangNhap();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

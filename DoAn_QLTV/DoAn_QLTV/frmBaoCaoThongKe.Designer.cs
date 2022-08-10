@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReport = new DevExpress.XtraEditors.SimpleButton();
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.dgvThongTinSach = new System.Windows.Forms.DataGridView();
@@ -38,22 +37,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinSach)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnReport
-            // 
-            this.btnReport.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.btnReport.Appearance.Options.UseFont = true;
-            this.btnReport.Location = new System.Drawing.Point(338, 95);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(91, 24);
-            this.btnReport.TabIndex = 3;
-            this.btnReport.Text = "Report";
-          
-            // 
             // btnThoat
             // 
             this.btnThoat.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnThoat.Appearance.Options.UseFont = true;
-            this.btnThoat.Location = new System.Drawing.Point(449, 95);
+            this.btnThoat.Location = new System.Drawing.Point(408, 95);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(91, 24);
             this.btnThoat.TabIndex = 4;
@@ -62,7 +50,7 @@
             // 
             // comboBoxEdit1
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(140, 95);
+            this.comboBoxEdit1.Location = new System.Drawing.Point(206, 96);
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
@@ -101,13 +89,13 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(76, 98);
+            this.labelControl2.Location = new System.Drawing.Point(128, 95);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(58, 17);
             this.labelControl2.TabIndex = 29;
             this.labelControl2.Text = "Thống kê:";
             // 
-            // XtraForm1
+            // frmBaoCaoThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,8 +105,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.dgvThongTinSach);
-            this.Controls.Add(this.btnReport);
-            this.Name = "XtraForm1";
+            this.Name = "frmBaoCaoThongKe";
             this.Text = "Báo Cáo - Thống Kê";
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinSach)).EndInit();
@@ -128,8 +115,6 @@
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.SimpleButton btnReport;
         private DevExpress.XtraEditors.SimpleButton btnThoat;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private System.Windows.Forms.DataGridView dgvThongTinSach;

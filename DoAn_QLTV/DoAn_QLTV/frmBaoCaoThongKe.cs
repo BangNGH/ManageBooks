@@ -7,7 +7,7 @@ namespace DoAn_QLTV
     public partial class frmBaoCaoThongKe : DevExpress.XtraEditors.XtraForm
     {
         SqlConnection connection;
-        SqlCommand command, cm1;
+        SqlCommand command;
         string str = @"Data Source=NONAME\SQLEXPRESS;Initial Catalog=DOAnQLTV;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table1 = new DataTable();

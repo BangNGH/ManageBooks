@@ -249,12 +249,10 @@ create table support
 (
 	mssv char(10) primary key,
 	hoTen nvarchar(35),
-	gioiTinh char(3),
-	SDT char(10) unique,
+	gioiTinh nvarchar(3),
+	SDT nvarchar(15) unique,
 	email varchar(50) unique,
-) select * from CT_PHIEUMUON
- update support set email = 'hahahahah' where mssv ='2080600938'
- select * from SACH
+) 
 
 select b.MaSach 'Mã sách', b.TenSach 'Tên sách', b.TenTacGia 'Tên tác giả', c.TenTL 'Thể loại' , d.TenNXB 'Tên NXB' ,b.NamXB 'Năm XB' from KESACH as a, SACH as b, THELOAI as c, NHAXUATBAN as d where a.MaKeSach = b.MaKeSach and b.MaTL = c.MaTL and d.MaNXB = b.MaNXB 
 EXCEPT
