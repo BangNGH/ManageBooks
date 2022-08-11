@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimKiemDG));
             this.btnLoad = new System.Windows.Forms.Button();
             this.lblTuKhoa = new System.Windows.Forms.Label();
             this.lblTimKiem = new System.Windows.Forms.Label();
@@ -62,6 +63,7 @@
             // lblTimKiem
             // 
             this.lblTimKiem.AutoSize = true;
+            this.lblTimKiem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimKiem.Location = new System.Drawing.Point(143, 9);
             this.lblTimKiem.Name = "lblTimKiem";
@@ -123,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(545, 450);
             this.Controls.Add(this.btnLoad);
@@ -136,6 +139,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmTimKiemDG";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm Kiếm Độc Giả";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTimKiemDG_FormClosing);
             this.Load += new System.EventHandler(this.frmTimKiemDG_Load);

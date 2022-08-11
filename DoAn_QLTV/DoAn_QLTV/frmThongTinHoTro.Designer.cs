@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongTinHoTro));
             this.dgvThongTinHoTro = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,15 +59,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(229, 307);
+            this.label1.Location = new System.Drawing.Point(223, 307);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(316, 16);
+            this.label1.Size = new System.Drawing.Size(322, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Giáo viên hướng dẫn: Ths.Dương Thành Phết";
+            this.label1.Text = "Giảng viên hướng dẫn: Ths.Dương Thành Phết";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(132, 26);
             this.label3.Name = "label3";
@@ -78,6 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(546, 332);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);

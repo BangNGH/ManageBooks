@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimKiemNV));
             this.btnLoad = new System.Windows.Forms.Button();
             this.lblTuKhoa = new System.Windows.Forms.Label();
             this.lblTimKiemNV = new System.Windows.Forms.Label();
@@ -62,6 +63,7 @@
             // lblTimKiemNV
             // 
             this.lblTimKiemNV.AutoSize = true;
+            this.lblTimKiemNV.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTimKiemNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimKiemNV.Location = new System.Drawing.Point(179, 9);
             this.lblTimKiemNV.Name = "lblTimKiemNV";
@@ -124,6 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(621, 410);
             this.Controls.Add(this.btnLoad);

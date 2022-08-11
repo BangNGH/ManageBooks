@@ -253,6 +253,14 @@ create table support
 	SDT nvarchar(15) unique,
 	email varchar(50) unique,
 ) 
+create table TheTV
+(
+	maTTV char(5) primary key,
+	MaDG char(4),
+	foreign key (MaDG) references DOCGIA(MaDG)
+	
+) 
+
 
 select b.MaSach 'Mã sách', b.TenSach 'Tên sách', b.TenTacGia 'Tên tác giả', c.TenTL 'Thể loại' , d.TenNXB 'Tên NXB' ,b.NamXB 'Năm XB' from KESACH as a, SACH as b, THELOAI as c, NHAXUATBAN as d where a.MaKeSach = b.MaKeSach and b.MaTL = c.MaTL and d.MaNXB = b.MaNXB 
 EXCEPT
